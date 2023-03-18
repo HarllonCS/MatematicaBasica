@@ -1,0 +1,19 @@
+# Web Projetcs
+I've been doing some projects for studies and practice my Web Development skills.
+
+Here's a link list of some of them:
+
+- [Web Project 1: News website](https://github.com/HarllonCS/news-website)
+- [Web Project 2: Math Solver](https://github.com/HarllonCS/math-solver)
+
+OBS.: As I save projects on GitHub, I also update the list.
+
+# Web Project: Math Solver
+Math Solver is a web-oriented project that has several options for mathematical functions, in which the user can perform them just by inserting their respective values. Creating tables (for multiplication, addition, subtraction and division), classifying triangles according to the angles shown and calculating BMI are just some of the functions that the website provides.
+
+## Page outline images
+
+### Landing page
+The Initial Page has a screen with several images, which when passing the cursor over it, shows a small summary that describes what that page does. And each image is a link to an HTML page.
+
+![Image sketch: Initial Page](./sketches/skt_initial-page.png)
