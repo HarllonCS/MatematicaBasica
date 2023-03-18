@@ -13,7 +13,7 @@ Math Solver is a web-oriented project that has several options for mathematical 
 
 ## Page outline images
 
-### Landing page
-The Initial Page has a screen with several images, which when passing the cursor over it, shows a small summary that describes what that page does. And each image is a link to an HTML page.
+### Initial pahe
+The Initial Page has a screen with several images, which when passing the cursor over it, shows a small summary that describes what that page does. And each image is a link to a different *HTML* page.
 
 ![Image sketch: Initial Page](./sketches/skt_initial-page.png)
