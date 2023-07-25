@@ -10,10 +10,3 @@ OBS.: As I save projects on GitHub, I also update the list.
 
 # Web Project: Math Solver
 Math Solver is a web-oriented project that has several options for mathematical functions, in which the user can perform them just by inserting their respective values. Creating tables (for multiplication, addition, subtraction and division), classifying triangles according to the angles shown and calculating BMI are just some of the functions that the website provides.
-
-## Page outline images
-
-### Initial page
-The Initial Page has a screen with several images, which when passing the cursor over it, shows a small summary that describes what that page does. And each image is a link to a different *HTML* page.
-
-![Image sketch: Initial Page](./sketches/skt_initial-page.png)
