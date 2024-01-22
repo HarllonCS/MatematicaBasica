@@ -1,0 +1,21 @@
+/* =========================== MEDIA QUERIES =========================== */
+
+/* For Extra Small (portrait phones, less than 576px) devices */
+@media (max-width: 575.98px) {}
+
+/* For Small (landscape phones, less than 768px) devices */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* For Medium (tablets, less than 992px) devices */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* For Large (desktops, less than 1200px) devices */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* For Extra Extra Large devices (>= 1400px) size screens */
+@media (min-width: 1400px) {
+    /* header */
+    .navbar-brand {font-size: 22pt;}
+
+    select {font-size: 12pt;}
+}
