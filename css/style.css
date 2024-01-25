@@ -1,4 +1,13 @@
 /* Header */
-.navbar-brand {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;}
+header {background-color: #64C5AA;}
 
-select {cursor: pointer;}
+.navbar-brand {font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;}
+
+select {
+    cursor: pointer;
+    background-color: #4ead92;
+    border-color: #7c7c7c
+}
+select option {background-color: #338870;}
+select:hover {background-color: #45a58a;}
+select:focus {border-color: none;}
