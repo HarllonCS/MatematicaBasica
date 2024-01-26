@@ -6,6 +6,12 @@
     .navbar-brand {font-size: 14pt;}
 
     select {font-size: 11pt;}
+
+    /* cards */
+    .card {
+        width: 90vw;
+        margin: 3vw auto 5vw auto;
+    }
 }
 
 /* For Small (landscape phones, less than 768px) devices */
@@ -14,6 +20,12 @@
     .navbar-brand {font-size: 18pt;}
 
     select {font-size: 12pt;}
+
+    /* cards */
+    .card {
+        width: 90vw;
+        margin: 0 auto 5vw auto;
+    }
 }
 
 /* For Medium (tablets, less than 992px) devices */
@@ -22,6 +34,14 @@
     .navbar-brand {font-size: 18pt;}
 
     select {font-size: 12pt;}
+
+    /* cards */
+    section {width: 90vw;}
+
+    .card {
+        width: 45vw;
+        margin-bottom: 5vw;
+    }
 }
 
 /* For Large (desktops, less than 1200px) devices */
@@ -30,6 +50,14 @@
     .navbar-brand {font-size: 18pt;}
 
     select {font-size: 11pt;}
+
+    /* cards */
+    section {width: 80vw;}
+
+    .card {
+        width: 19.5vw;
+        margin-bottom: 5vw;
+    }
 }
 
 /* For Extra Large devices (>= 1200px) sizes screens */
@@ -38,6 +66,14 @@
     .navbar-brand {font-size: 18pt;}
 
     select {font-size: 11pt;}
+
+    /* cards */
+    section {width: 80vw;}
+
+    .card {
+        width: 19.5vw;
+        margin-bottom: 5vw;
+    }
 }
 
 /* For Extra Extra Large devices (>= 1400px) size screens */
@@ -46,4 +82,12 @@
     .navbar-brand {font-size: 22pt;}
 
     select {font-size: 12pt;}
+
+    /* cards */
+    section {width: 80vw;}
+
+    .card {
+        width: 19.5vw;
+        margin-bottom: 5vw;
+    }
 }
