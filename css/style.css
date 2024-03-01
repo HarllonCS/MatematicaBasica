@@ -1,4 +1,4 @@
-body {background: #fcedd1;}
+body {background: #fae2b4;}
 
 /* Header */
 header {background-color: #64C5AA;}
@@ -17,8 +17,8 @@ select:focus {border-color: none;}
 /* Cards */
 .card {
     cursor: pointer;
-    background-color: #fcedd1;
+    background-color: transparent;
     border: 1px solid transparent;
-    transition: .4s;
+    transition: all .4s;
 }
 .card:hover {border-color: skyblue;}
