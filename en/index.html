@@ -42,7 +42,7 @@
     </header> <!-- /end Header -->
 
     <main role="main">
-        <section class="mx-auto mt-sm-3 mt-lg-5"> <!-- Cards -->
+        <section class="mx-auto mt-sm-3 mt-lg-5 d-none"> <!-- Cards -->
             <div class="row justify-content-md-between"> <!-- 1st row -->
                 <div class="card col-lg-3 col-md-6 px-0">
                     <img src="https://picsum.photos/200/100?random=1" class="rounded-top">
@@ -128,7 +128,45 @@
             </div> <!-- /end 2nd row -->
         </section> <!-- /end Cards -->
         
-        <div class="d-none"></div>
+        <div>
+            <div id="table" class="input-box mx-auto mt-5 p-4 rounded shadow"> <!-- Table -->
+                <!-- Start -->
+                <input type="number" id="start" class="form-control mb-4" placeholder="Start" step=".05" autofocus>
+                <!-- End -->
+                <input type="number" id="end" class="form-control mb-4" placeholder="End" step=".05">
+                <!-- Number -->
+                <input type="number" id="number" class="form-control mb-4" placeholder="Number" step=".05">
+                <!-- Steps -->
+                <input type="number" id="steps" class="form-control" placeholder="Steps" min="0" step=".05">
+
+                <p class="label fw-bold text-white my-3">Choose a Operation:</p>
+
+                <div class="d-flex justify-content-between">
+                    <div class="form-check"> <!-- Addition option -->
+                        <input type="radio" id="add" name="op" class="form-check-input">
+                        <label for="add" class="form-check-label fw-bold">Addition (+)</label>
+                    </div> <!-- /end Addition option -->
+
+                    <div class="form-check"> <!-- Subtration option -->
+                        <input type="radio" id="sub" name="op" class="form-check-input">
+                        <label for="sub" class="form-check-label fw-bold">Subtraction (-)</label>
+                    </div> <!-- /end Subtraction option -->
+
+                    <div class="form-check"> <!-- Multiplication option -->
+                        <input type="radio" id="mult" name="op" class="form-check-input" checked>
+                        <label for="mult" class="form-check-label fw-bold">Multiplication (X)</label>
+                    </div> <!-- /end Multiplication option -->
+
+                    <div class="form-check"> <!-- Division option -->
+                        <input type="radio" id="div" name="op" class="form-check-input">
+                        <label for="div" class="form-check-label fw-bold">Division (÷)</label>
+                    </div> <!-- /end Division option -->
+                </div>
+
+                <!-- Generate button -->
+                <button type="button" class="btn btn-success rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Generate</button>
+            </div> <!-- /end Table -->
+        </div>
     </main>
 
     <script src="../js/bootstrap.min.js"></script>

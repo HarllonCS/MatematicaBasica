@@ -22,3 +22,15 @@ select:focus {border-color: none;}
     transition: all .4s;
 }
 .card:hover {border-color: skyblue;}
+
+/* Input boxes */
+.input-box {background-color: #fdd386;}
+
+.input-box .label {text-shadow: 0 0 6px #00000077;}
+
+.input-box .form-control {transition: all .3s;}
+.input-box .form-control:hover {box-shadow: 0 0 0 4px #00000031;}
+.input-box .form-control::placeholder {color: #b1b1b1;}
+
+.input-box .form-check-input,
+.input-box .form-check-label {cursor: pointer}
