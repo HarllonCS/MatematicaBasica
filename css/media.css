@@ -14,11 +14,11 @@
     }
 
     /* input boxes */
-    .input-box {width: 95%;}
+    #input-box {width: 95%;}
 
-    .input-box .form-control,
-    .input-box p,
-    .input-box .btn {font-size: 12pt;}
+    #input-box .form-control,
+    #input-box p,
+    #input-box .btn {font-size: 12pt;}
 }
 
 /* For Small (landscape phones, less than 768px) devices */
@@ -35,11 +35,11 @@
     }
 
     /* input boxes */
-    .input-box {width: 80%;}
+    #input-box {width: 80%;}
 
-    .input-box .form-control,
-    .input-box p,
-    .input-box .btn {font-size: 12pt;}
+    #input-box .form-control,
+    #input-box p,
+    #input-box .btn {font-size: 12pt;}
 }
 
 /* For Medium (tablets, less than 992px) devices */
@@ -58,11 +58,11 @@
     }
 
     /* input boxes */
-    .input-box {width: 60%;}
+    #input-box {width: 60%;}
 
-    .input-box .form-control,
-    .input-box p,
-    .input-box .btn {font-size: 12pt;}
+    #input-box .form-control,
+    #input-box p,
+    #input-box .btn {font-size: 12pt;}
 }
 
 /* For Large (desktops, less than 1200px) devices */
@@ -81,11 +81,11 @@
     }
 
     /* input boxes */
-    .input-box {width: 48%;}
+    #input-box {width: 48%;}
 
-    .input-box .form-control,
-    .input-box p,
-    .input-box .btn {font-size: 11pt;}
+    #input-box .form-control,
+    #input-box p,
+    #input-box .btn {font-size: 11pt;}
 }
 
 /* For Extra Large devices (>= 1200px) sizes screens */
@@ -104,11 +104,11 @@
     }
 
     /* input boxes */
-    .input-box {width: 40%;}
+    #input-box {width: 40%;}
 
-    .input-box .form-control,
-    .input-box p,
-    .input-box .btn {font-size: 12pt;}
+    #input-box .form-control,
+    #input-box p,
+    #input-box .btn {font-size: 12pt;}
 }
 
 /* For Extra Extra Large devices (>= 1400px) size screens */
@@ -127,9 +127,9 @@
     }
 
     /* input boxes */
-    .input-box {width: 32%;}
+    #input_box {width: 32%;}
 
-    .input-box .form-control,
-    .input-box p,
-    .input-box .btn {font-size: 14pt;}
+    #input_box .form-control,
+    #input_box p,
+    #input_box .btn {font-size: 14pt;}
 }
