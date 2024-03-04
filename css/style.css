@@ -34,3 +34,11 @@ select:focus {border-color: none;}
 
 #input_box .form-check-input,
 #input_box .form-check-label {cursor: pointer}
+
+#input_box .back-link {
+    cursor: pointer;
+    color: #2295d8;
+}
+#input_box .back-link:hover {color: #32baf0;}
+
+#table {display: none;}

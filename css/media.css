@@ -132,4 +132,6 @@
     #input_box .form-control,
     #input_box p,
     #input_box .btn {font-size: 14pt;}
+
+    #input_box .back-link {width: 3.5vw;}
 }
