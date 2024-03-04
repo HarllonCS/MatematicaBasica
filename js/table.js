@@ -1,4 +1,4 @@
-// Global variables to inputs
+// Global inputs variables
 const start = document.querySelector('#start'),
     end = document.querySelector('#end'),
     // Get elements
@@ -18,15 +18,12 @@ document.querySelectorAll('.btn')[0].addEventListener('click', () => {
 
     // Clean result space
     tableRes.innerHTML = ''
-    
+
+    // Avoid infinite loop
+    if (steps == 0) {steps = 1}
+
     // Call functions according to the condition
-    // s <= e ? increasingTable(s, e, steps) : decreasingTable(s, e, steps)
-
-    if (start.value.length == 0) {
-        tableRes.innerHTML = '<p class=\'fw-bold text-danger text-center\'>The start field must not be empty.</p>'
-    }
-
-    // console.log();
+    s <= e ? increasingTable(s, e, steps) : decreasingTable(s, e, steps)
 
     table.append(tableRes)
 })
@@ -36,19 +33,20 @@ function increasingTable(start, end, steps) {
     // Generate table according to the string params
     if (op[0].checked) {
         for (; start <= end; start += steps) {
-            tableRes.innerHTML += generateTable('add')
+            tableRes.innerHTML += generateTable(start, 'add')
+            // console.log(start);
         }   
     } else if (op[1].checked) {
         for (; start <= end; start += steps) {
-            tableRes.innerHTML += generateTable('sub')
+            tableRes.innerHTML += generateTable(start, 'sub')
         }
     } else if (op[2].checked) {
         for (; start <= end; start += steps) {
-            tableRes.innerHTML += generateTable('mult')
+            tableRes.innerHTML += generateTable(start, 'mult')
         }
     } else {
         for (; start <= end; start += steps) {
-            tableRes.innerHTML += generateTable('div')
+            tableRes.innerHTML += generateTable(start, 'div')
         }
     }
 }
@@ -58,29 +56,28 @@ function decreasingTable(start, end, steps) {
     // Generate table according to the string params
     if (op[0].checked) {
         for (; start >= end; start -= steps) {
-            tableRes.innerHTML += generateTable('add')
+            tableRes.innerHTML += generateTable(start, 'add')
         }   
     } else if (op[1].checked) {
         for (; start >= end; start -= steps) {
-            tableRes.innerHTML += generateTable('sub')
+            tableRes.innerHTML += generateTable(start, 'sub')
         }
     } else if (op[2].checked) {
         for (; start >= end; start -= steps) {
-            tableRes.innerHTML += generateTable('mult')
+            tableRes.innerHTML += generateTable(start, 'mult')
         }
     } else {
         for (; start >= end; start -= steps) {
-            tableRes.innerHTML += generateTable('div')
+            tableRes.innerHTML += generateTable(start, 'div')
         }
     }
 }
 
 // Generate table
-function generateTable(sign) {
-    let s = Number(start.value),
-        n = Number(document.querySelector('#number').value)
+function generateTable(s, operation) {
+    const n = Number(document.querySelector('#number').value)
 
-    switch (sign) {
+    switch (operation) {
         case 'add':
             result = `<p class='fw-bold text-center'>${s} + ${n} = ${(s + n).toFixed(2)}</p>`
             break
