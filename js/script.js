@@ -1,7 +1,7 @@
 // Get elements
 const card = document.querySelectorAll('.card'),
     backLink = document.querySelectorAll('.back-link'),
-
+    table = document.querySelector('#table'),
     sec = document.querySelector('section')
 
 card[0].addEventListener('click', () => {

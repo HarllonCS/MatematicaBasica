@@ -2,7 +2,6 @@
 const start = document.querySelector('#start'),
     end = document.querySelector('#end'),
     // Get elements
-    table = document.querySelector('#table'),
     op = document.querySelectorAll('.table-op'),
     // Create elements
     tableRes = document.createElement('div')
