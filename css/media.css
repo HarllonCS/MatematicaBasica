@@ -14,16 +14,16 @@
     }
 
     /* input boxes */
-    #input_box {width: 95vw;}
+    #table {width: 95vw;}
 
-    #input_box .form-control,
-    #input_box p,
-    #input_box .btn,
-    #input_box .form-check {font-size: 12pt;}
+    .input-box .form-control,
+    .input-box p,
+    .input-box .btn,
+    .input-box .form-check {font-size: 12pt;}
 
-    #input_box .form-check {margin-bottom: 4vw;}
+    .input-box .form-check {margin-bottom: 4vw;}
 
-    #input_box .back-link {width: 20vw;}
+    .input-box .back-link {width: 20vw;}
 }
 
 /* For Small (landscape phones, less than 768px) devices */
@@ -40,14 +40,14 @@
     }
 
     /* input boxes */
-    #input_box {width: 80vw;}
+    #table {width: 80vw;}
 
-    #input_box .form-control,
-    #input_box p,
-    #input_box .btn,
-    #input_box .form-check {font-size: 12pt;}
+    .input-box .form-control,
+    .input-box p,
+    .input-box .btn,
+    .input-box .form-check {font-size: 12pt;}
 
-    #input_box .back-link {width: 9.8vw;}
+    .input-box .back-link {width: 9.8vw;}
 }
 
 /* For Medium (tablets, less than 992px) devices */
@@ -66,14 +66,14 @@
     }
 
     /* input boxes */
-    #input_box {width: 65vw;}
+    #table {width: 65vw;}
 
-    #input_box .form-control,
-    #input_box p,
-    #input_box .btn,
-    #input_box .form-check {font-size: 12pt;}
+    .input-box .form-control,
+    .input-box p,
+    .input-box .btn,
+    .input-box .form-check {font-size: 12pt;}
 
-    #input_box .back-link {width: 7.5vw;}
+    .input-box .back-link {width: 7.5vw;}
 }
 
 /* For Large (desktops, less than 1200px) devices */
@@ -92,15 +92,15 @@
     }
 
     /* input boxes */
-    #input_box {width: 50vw;}
+    #table {width: 50vw;}
 
-    #input_box .form-control,
-    #input_box p,
-    #input_box .btn {font-size: 11pt;}
+    .input-box .form-control,
+    .input-box p,
+    .input-box .btn {font-size: 11pt;}
 
-    #input_box .form-check {font-size: 10pt;}
+    .input-box .form-check {font-size: 10pt;}
 
-    #input_box .back-link {width: 5.3vw;}
+    .input-box .back-link {width: 5.3vw;}
 }
 
 /* For Extra Large devices (>= 1200px) sizes screens */
@@ -119,15 +119,15 @@
     }
 
     /* input box */
-    #input_box {width: 50vw;}
+    #table {width: 50vw;}
 
-    #input_box .form-control,
-    #input_box p,
-    #input_box .btn {font-size: 12pt;}
+    .input-box .form-control,
+    .input-box p,
+    .input-box .btn {font-size: 12pt;}
 
-    #input_box .form-check {font-size: 12pt;}
+    .input-box .form-check {font-size: 12pt;}
 
-    #input_box .back-link {width: 4.8vw;}
+    .input-box .back-link {width: 4.8vw;}
 }
 
 /* For Extra Extra Large devices (>= 1400px) size screens */
@@ -146,13 +146,13 @@
     }
 
     /* input box */
-    #input_box {width: 35vw;}
+    #table {width: 35vw;}
 
-    #input_box .form-control,
-    #input_box p,
-    #input_box .btn {font-size: 14pt;}
+    .input-box .form-control,
+    .input-box p,
+    .input-box .btn {font-size: 14pt;}
 
-    #input_box .form-check {font-size: 11.5pt;}
+    .input-box .form-check {font-size: 11.5pt;}
 
-    #input_box .back-link {width: 4.8vw;}
+    .input-box .back-link {width: 4.8vw;}
 }

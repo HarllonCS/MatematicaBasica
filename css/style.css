@@ -24,21 +24,22 @@ select:focus {border-color: none;}
 .card:hover {border-color: skyblue;}
 
 /* Input boxes */
-#input_box {background-color: #fdd386;}
+#table {display: none;}
 
-#input_box .label {text-shadow: 0 0 6px #00000077;}
+.input-box {background-color: #fdd386;}
 
-#input_box .form-control {transition: all .3s;}
-#input_box .form-control:hover {box-shadow: 0 0 0 4px #00000031;}
-#input_box .form-control::placeholder {color: #b1b1b1;}
-
-#input_box .form-check-input,
-#input_box .form-check-label {cursor: pointer}
-
-#input_box .back-link {
+/* Labels */
+.input-box .label {text-shadow: 0 0 6px #00000077;}
+/* Fields */
+.input-box .form-control {transition: all .3s;}
+.input-box .form-control:hover {box-shadow: 0 0 0 4px #00000031;}
+.input-box .form-control::placeholder {color: #b1b1b1;}
+/* Checkboxes */
+.input-box .form-check-input,
+.input-box .form-check-label {cursor: pointer}
+/* Button to back */
+.input-box .back-link {
     cursor: pointer;
     color: #2295d8;
 }
-#input_box .back-link:hover {color: #32baf0;}
-
-#table {display: none;}
+.input-box .back-link:hover {color: #32baf0;}
