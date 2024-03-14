@@ -5,14 +5,15 @@ header {background-color: #64C5AA;}
 
 .navbar-brand {font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;}
 
-select {
-    cursor: pointer;
+select {cursor: pointer;}
+
+header select {
     background-color: #4ead92;
     border-color: #555555
 }
-select option {background-color: #338870;}
-select:hover {background-color: #45a58a;}
-select:focus {border-color: none;}
+header select option {background-color: #338870;}
+header select:hover {background-color: #45a58a;}
+header select:focus {border-color: none;}
 
 /* Cards */
 .card {
@@ -24,12 +25,12 @@ select:focus {border-color: none;}
 .card:hover {border-color: skyblue;}
 
 /* Input boxes */
-#table {display: none;}
+#table, #unit {display: none;}
 
 .input-box {background-color: #fdd386;}
 
 /* Labels */
-.input-box .label {text-shadow: 0 0 6px #00000077;}
+.input-box .text {text-shadow: 0 0 6px #00000077;}
 /* Fields */
 .input-box .form-control {transition: all .3s;}
 .input-box .form-control:hover {box-shadow: 0 0 0 4px #00000031;}

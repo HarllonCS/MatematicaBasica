@@ -1,6 +1,6 @@
 // Global inputs variables
-const start = document.querySelector('#start')
-const end = document.querySelector('#end')
+const start = document.querySelector('#table_start')
+const end = document.querySelector('#table_end')
 // Get elements
 const op = document.querySelectorAll('.table-op')
 // Create elements
@@ -13,7 +13,7 @@ tableRes.className = 'table-result'
 document.querySelectorAll('.btn')[0].addEventListener('click', () => {
     let s = Number(start.value)
     let e = Number(end.value)
-    let steps = Number(document.querySelector('#steps').value)
+    let steps = Number(document.querySelector('#table_steps').value)
 
     // Clean result space
     tableRes.innerHTML = ''
@@ -73,20 +73,21 @@ function decreasingTable(start, end, steps) {
 
 // Generate table
 function generateTable(s, operation) {
-    const n = Number(document.querySelector('#number').value).toFixed(2)
+    const n = Number(document.querySelector('#table_number').value).toFixed(2)
+    s = Number(s.toFixed(2))
 
     switch (operation) {
         case 'add':
-            result = `<p class='fw-bold text-center'>${s.toFixed(2)} + ${n} = ${(s + n).toFixed(2)}</p>`
+            result = `<p class='fw-bold text-center'>${s} + ${n} = ${Number(s + n).toFixed(2)}</p>`
             break
         case 'sub':
-            result = `<p class='fw-bold text-center'>${s.toFixed(2)} - ${n} = ${(s - n).toFixed(2)}</p>`
+            result = `<p class='fw-bold text-center'>${s} - ${n} = ${(s - n).toFixed(2)}</p>`
             break
         case 'mult':
-            result = `<p class='fw-bold text-center'>${s.toFixed(2)} X ${n} = ${(s * n).toFixed(2)}</p>`
+            result = `<p class='fw-bold text-center'>${s} X ${n} = ${(s * n).toFixed(2)}</p>`
             break
         case 'div': 
-            result = `<p class='fw-bold text-center'>${s.toFixed(2)} ÷ ${n} = ${(s / n).toFixed(2)}</p>`
+            result = `<p class='fw-bold text-center'>${s} ÷ ${n} = ${(s / n).toFixed(2)}</p>`
         break
     }
     return result

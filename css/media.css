@@ -5,7 +5,7 @@
     /* header */
     .navbar-brand {font-size: 14pt;}
 
-    select {font-size: 11pt;}
+    header select {font-size: 11pt;}
 
     /* cards */
     .card {
@@ -14,12 +14,13 @@
     }
 
     /* input boxes */
-    #table {width: 95vw;}
+    #table, #unit {width: 95vw;}
 
     .input-box .form-control,
     .input-box p,
     .input-box .btn,
-    .input-box .form-check {font-size: 12pt;}
+    .input-box .form-check,
+    .input-box .form-select {font-size: 12pt;}
 
     .input-box .form-check {margin-bottom: 4vw;}
 
@@ -31,7 +32,7 @@
     /* header */
     .navbar-brand {font-size: 18pt;}
 
-    select {font-size: 12pt;}
+    header select {font-size: 12pt;}
 
     /* cards */
     .card {
@@ -41,6 +42,7 @@
 
     /* input boxes */
     #table {width: 80vw;}
+    #unit {width: 70vw;}
 
     .input-box .form-control,
     .input-box p,
@@ -55,7 +57,7 @@
     /* header */
     .navbar-brand {font-size: 18pt;}
 
-    select {font-size: 12pt;}
+    header select {font-size: 12pt;}
 
     /* cards */
     section {width: 90vw;}
@@ -67,6 +69,7 @@
 
     /* input boxes */
     #table {width: 65vw;}
+    #unit {width: 50vw;}
 
     .input-box .form-control,
     .input-box p,
@@ -81,7 +84,7 @@
     /* header */
     .navbar-brand {font-size: 18pt;}
 
-    select {font-size: 11pt;}
+    header select {font-size: 11pt;}
 
     /* cards */
     section {width: 80vw;}
@@ -93,6 +96,7 @@
 
     /* input boxes */
     #table {width: 50vw;}
+    #unit {width: 40vw;}
 
     .input-box .form-control,
     .input-box p,
@@ -108,7 +112,7 @@
     /* header */
     .navbar-brand {font-size: 18pt;}
 
-    select {font-size: 11pt;}
+    header select {font-size: 11pt;}
 
     /* cards */
     section {width: 80vw;}
@@ -120,6 +124,7 @@
 
     /* input box */
     #table {width: 50vw;}
+    #unit {width: 32vw;}
 
     .input-box .form-control,
     .input-box p,
@@ -135,7 +140,7 @@
     /* header */
     .navbar-brand {font-size: 22pt;}
 
-    select {font-size: 12pt;}
+    header select {font-size: 12pt;}
 
     /* cards */
     section {width: 80vw;}
@@ -147,6 +152,7 @@
 
     /* input box */
     #table {width: 35vw;}
+    #unit {width: 28vw;}
 
     .input-box .form-control,
     .input-box p,
