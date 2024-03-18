@@ -44,7 +44,7 @@
     </header> <!-- /end Header -->
 
     <main role="main">
-        <section class="mx-auto mt-sm-3 mt-lg-5"> <!-- Cards -->
+        <section class="mx-auto mt-sm-3 mt-lg-5 d-none"> <!-- Cards -->
             <div class="row justify-content-md-between">
                 <div class="card col-lg-3 col-md-6 p-1">
                     <img src="https://picsum.photos/200/100?random=1" class="rounded">
@@ -131,15 +131,15 @@
         </section> <!-- /end Cards -->
         
         <div>
-            <div id="table" class="my-5 p-4 rounded mx-auto shadow input-box"> <!-- Calculation Table -->
+            <div id="table" class="my-5 p-4 rounded mx-auto shadow d-none input-box"> <!-- Calculation Table -->
                 <!-- Start -->
-                <input type="number" id="table_start" class="form-control mb-4" placeholder="Start" step=".05" autofocus>
+                <input type="number" id="tableStart" class="form-control mb-4" placeholder="Start" step=".05" autofocus>
                 <!-- End -->
-                <input type="number" id="table_end" class="form-control mb-4" placeholder="End" step=".05">
+                <input type="number" id="tableEnd" class="form-control mb-4" placeholder="End" step=".05">
                 <!-- Number -->
-                <input type="number" id="table_number" class="form-control mb-4" placeholder="Number" step=".05">
+                <input type="number" id="tableNumber" class="form-control mb-4" placeholder="Number" step=".05">
                 <!-- Steps -->
-                <input type="number" id="table_steps" class="form-control" placeholder="Steps" min="0" step=".05">
+                <input type="number" id="tableSteps" class="form-control" placeholder="Steps" min="0" step=".05">
 
                 <p class="text fw-bold text-white my-4">Choose a Operation:</p>
 
@@ -174,16 +174,18 @@
                 </p> <!-- /end Back link -->
             </div> <!-- /end Calculation Table -->
 
-            <div id="unit" class="my-5 p-4 rounded mx-auto shadow input-box"> <!-- Unit Converter -->
+            <div id="unit" class="my-5 p-4 rounded mx-auto shadow input-box"> <!-- Unit of Length Converter -->
                 <!-- unit number -->
-                <input type="number" id="unit_number" class="form-control" placeholder="Number" step=".05" autofocus>
+                <input type="number" id="unitNumber" class="form-control" placeholder="Number" step=".05" autofocus>
 
                 <div class="d-flex justify-content-between mt-4 mb-2">
-                    <div> <!-- Convert from -->
-                        <p class="text fw-bold text-white">From:</p>
+                    <div id="from"> <!-- Convert from -->
+                        <p class="text fw-bold text-white">Convert from:</p>
 
-                        <select class="form-select">
+                        <select class="form-select fw-bold">
                             <option value="km">Kilometer (km)</option>
+                            <option value="hm">Hectometer (hm)</option>
+                            <option value="dam">Decameter (dcm)</option>
                             <option value="m" selected>Meter (m)</option>
                             <option value="dm">Decimeter (dm)</option>
                             <option value="cm">Centimeter (cm)</option>
@@ -191,11 +193,13 @@
                         </select>
                     </div> <!-- /end Convert from -->
 
-                    <div> <!-- Convert to -->  
+                    <div id="to"> <!-- Convert to -->  
                         <p class="text fw-bold text-white">Convert to:</p>
 
-                        <select class="form-select">
+                        <select class="form-select fw-bold">
                             <option value="km" selected>Kilometer (km)</option>
+                            <option value="hm">Hectometer (hm)</option>
+                            <option value="dam">Decameter (dcm)</option>
                             <option value="m">Meter (m)</option>
                             <option value="dm">Decimeter (dm)</option>
                             <option value="cm">Centimeter (cm)</option>
@@ -211,12 +215,13 @@
                     <i class="fa-solid fa-arrow-left"></i>
                     Back
                 </p> <!-- /end Back link -->
-            </div> <!-- /end Unit Converter -->
+            </div> <!-- /end Unit of Length Converter -->
         </div>
     </main>
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/table.js"></script>
+    <script src="../js/unit.js"></script>
 </body>
 </html>
