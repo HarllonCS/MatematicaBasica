@@ -25,7 +25,7 @@ header select:focus {border-color: none;}
 .card:hover {border-color: skyblue;}
 
 /* Input boxes */
-/* #table, #unit {display: none;} */
+#table, #unit {display: none;}
 
 .input-box {background-color: #fdd386;}
 

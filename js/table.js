@@ -1,19 +1,19 @@
 // Get elements
 const op = document.querySelectorAll('.table-op')
-// Create elements
-const tableRes = document.createElement('div')
+const table = document.getElementById('table')
+const tableBtn = document.querySelectorAll('.btn')[0]
+// Create div to the result
+const tableResult = document.createElement('div')
+tableResult.className = 'result'
 
-// Atribute the class "table-result"
-tableRes.className = 'table-result'
-
-// TABLE FUNCTION
-document.querySelectorAll('.btn')[0].addEventListener('click', () => {
-    let start = Number(tableStart.value)
-    let end = Number(tableEnd.value)
-    let steps = Number(document.querySelector('#tableSteps').value)
+// TABLE FUNCTION function
+tableBtn.onclick = function() {
+    let start = Number(document.getElementByid('tableStart').value)
+    let end = Number(document.getElementById('tableEnd').value)
+    let steps = Number(document.getElementById('tableSteps').value)
 
     // Clean result space
-    tableRes.innerHTML = ''
+    tableResult.innerHTML = ''
 
     // Avoid infinite loop
     if (steps == 0) {steps = 1}
@@ -21,8 +21,8 @@ document.querySelectorAll('.btn')[0].addEventListener('click', () => {
     // Call functions according to the condition
     start <= end ? increasingTable(start, end, steps) : decreasingTable(start, end, steps)
 
-    table.append(tableRes)
-})
+    table.append(tableResult)
+}
 
 // Increasing Table
 const increasingTable = (start, end, steps) => {
@@ -70,7 +70,7 @@ const decreasingTable = (start, end, steps) => {
 
 // Generate table
 const generateTable = (s, operation) => {
-    const n = Number(tableNumber.value)
+    const n = Number(document.getElementById('tableNumber').value)
 
     switch (operation) {
         case 'add':
