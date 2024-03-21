@@ -153,6 +153,7 @@
     /* input box */
     #table {width: 35vw;}
     #unit {width: 28vw;}
+    #temperature {width: 28vw;}
 
     .input-box .form-control,
     .input-box p,

@@ -44,7 +44,7 @@
     </header> <!-- /end Header -->
 
     <main role="main">
-        <section class="mx-auto mt-sm-3 mt-lg-5"> <!-- Cards -->
+        <section class="mx-auto mt-sm-3 mt-lg-5 d-none"> <!-- Cards -->
             <div class="row justify-content-md-between">
                 <div class="card col-lg-3 col-md-6 p-1">
                     <img src="https://picsum.photos/200/100?random=1" class="rounded">
@@ -131,7 +131,7 @@
         </section> <!-- /end Cards -->
         
         <div>
-            <div id="table" class="my-5 p-4 rounded mx-auto shadow input-box"> <!-- Calculation Table -->
+            <div id="table" class="my-5 p-4 rounded mx-auto shadow d-none input-box"> <!-- Calculation Table -->
                 <!-- Start -->
                 <input type="number" id="tableStart" class="form-control mb-4" placeholder="Start" step=".05" autofocus>
                 <!-- End -->
@@ -174,7 +174,7 @@
                 </p> <!-- /end Back link -->
             </div> <!-- /end Calculation Table -->
 
-            <div id="unit" class="my-5 p-4 rounded mx-auto shadow input-box"> <!-- Unit of Length Converter -->
+            <div id="unit" class="my-5 p-4 rounded mx-auto shadow d-none input-box"> <!-- Unit of Length Converter -->
                 <!-- unit number -->
                 <input type="number" id="unitNumber" class="form-control" placeholder="Number" step=".05" autofocus>
 
@@ -216,6 +216,25 @@
                     Back
                 </p> <!-- /end Back link -->
             </div> <!-- /end Unit of Length Converter -->
+
+            <div id="temperature" class="my-5 p-4 rounded mx-auto shadow input-box"> <!-- Temperature Converter -->
+                <div class="input-group"> <!-- Input box -->
+                    <input type="number" id="tempNumber" class="form-control" placeholder="Number" step=".05" autofocus style="width: 12vw;">
+
+                    <select class="form-select fw-bold input-group-text">
+                        <option value="f">Fahrenheit (°F)</option>
+                        <option value="c" selected>Celsius (°C)</option>
+                        <option value="k">Kelvin (K)</option>
+                    </select>
+                </div> <!-- /end Input box -->
+
+                <button class="btn btn-success rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Convert</button>
+
+                <p class="ms-auto fw-bold back-link"> <!-- Back link -->
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back
+                </p> <!-- /end Back link -->
+            </div> <!-- /end Temperature Converter -->
         </div>
     </main>
 
@@ -223,5 +242,6 @@
     <script src="../js/script.js"></script>
     <script src="../js/table.js"></script>
     <script src="../js/unit.js"></script>
+    <script src="../js/temperature.js"></script>
 </body>
 </html>

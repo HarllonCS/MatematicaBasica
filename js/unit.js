@@ -14,21 +14,7 @@ unitBtn.onclick = function() {
 
     unitResult.innerHTML = ''
 
-    if (selectFrom.value == 'km') {
-        unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)
-    } else if (selectFrom.value == 'hm') {
-        unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)
-    } else if (selectFrom.value == 'dam') {
-        unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)   
-    } else if (selectFrom.value == 'm') {
-        unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)
-    } else if (selectFrom.value == 'dm') {
-        unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)
-    } else if (selectFrom.value == 'cm') {
-        unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)
-    } else {
-        unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)
-    }
+    unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)
     
     unit.append(unitResult)
 }
