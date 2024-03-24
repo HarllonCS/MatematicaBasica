@@ -11,12 +11,34 @@ unitResult.className = 'result'
 // UNIT CONVERTER function
 unitBtn.onclick = function() {
     const num = Number(document.getElementById('unitNumber').value)
-
+    
     unitResult.innerHTML = ''
 
-    unitResult.innerHTML += convert(selectFrom.value, selectTo.value, num)
-    
+    unitResult.innerHTML += `<p class="text-center fw-bold">${convert(selectFrom.value, selectTo.value, num)}</p>`
+
     unit.append(unitResult)
+}
+
+let currentFrom = selectFrom.value
+
+selectFrom.onchange = function() {
+    let previousFrom = currentFrom
+    currentFrom = selectFrom.value
+
+    if (currentFrom == selectTo.value) {
+        selectTo.value = previousFrom
+    }
+}
+
+let currentTo = selectTo.value
+
+selectTo.onchange = function () {
+    let previousTo = currentTo
+    currentTo = selectTo.value
+
+    if (currentTo == selectFrom.value) {
+        selectFrom.value = previousTo
+    }
 }
 
 const convert = (from, to, n) => {
@@ -25,169 +47,169 @@ const convert = (from, to, n) => {
     if (from == 'km') {
         switch (to) {
             case 'km':
-                result = `<p class="text-center fw-bold">${n} km = ${n * 1} km</p>`
+                result = `${n} km = ${n * 1} km`
                 break
             case 'hm':
-                result = `<p class="text-center fw-bold">${n} km = ${n * 10} hm</p>`
+                result = `${n} km = ${n * 10} hm`
                 break
             case 'dam':
-                result = `<p class="text-center fw-bold">${n} km = ${n * 100} dam</p>`
+                result = `${n} km = ${n * 100} dam`
                 break
             case 'm':
-                result = `<p class="text-center fw-bold">${n} km = ${n * 1000} m</p>`
+                result = `${n} km = ${n * 1000} m`
                 break
             case 'dm':
-                result = `<p class="text-center fw-bold">${n} km = ${n * 10000} dm</p>`
+                result = `${n} km = ${n * 10000} dm`
                 break
             case 'cm':
-                result = `<p class="text-center fw-bold">${n} km = ${n * 100000} cm</p>`
+                result = `${n} km = ${n * 100000} cm`
                 break
             case 'mm':
-                result = `<p class="text-center fw-bold">${n} km = ${n * 1000000} mm</p>`
+                result = `${n} km = ${n * 1000000} mm`
                 break
         }
     } else if (from == 'hm') {
         switch (to) {
             case 'km':
-                result = `<p class="text-center fw-bold">${n} hm = ${n / 10} km</p>`
+                result = `${n} hm = ${n / 10} km`
                 break
             case 'hm':
-                result = `<p class="text-center fw-bold">${n} hm = ${n * 1} hm</p>`
+                result = `${n} hm = ${n * 1} hm`
                 break
             case 'dam':
-                result = `<p class="text-center fw-bold">${n} hm = ${n * 10} dam</p>`
+                result = `${n} hm = ${n * 10} dam`
                 break
             case 'm':
-                result = `<p class="text-center fw-bold">${n} hm = ${n * 100} m</p>`
+                result = `${n} hm = ${n * 100} m`
                 break
             case 'dm':
-                result = `<p class="text-center fw-bold">${n} hm = ${n * 1000} dm</p>`
+                result = `${n} hm = ${n * 1000} dm`
                 break
             case 'cm':
-                result = `<p class="text-center fw-bold">${n} hm = ${n * 10000} cm</p>`
+                result = `${n} hm = ${n * 10000} cm`
                 break
             case 'mm':
-                result = `<p class="text-center fw-bold">${n} hm = ${n * 100000} mm</p>`
+                result = `${n} hm = ${n * 100000} mm`
                 break
         }
     } else if (from == 'dam') {
         switch (to) {
             case 'km':
-                result = `<p class="text-center fw-bold">${n} dam = ${n / 100} km</p>`
+                result = `${n} dam = ${n / 100} km`
                 break
             case 'hm':
-                result = `<p class="text-center fw-bold">${n} dam = ${n / 10} hm</p>`
+                result = `${n} dam = ${n / 10} hm`
                 break
             case 'dam':
-                result = `<p class="text-center fw-bold">${n} dam = ${n * 1} dam</p>`
+                result = `${n} dam = ${n * 1} dam`
                 break
             case 'm':
-                result = `<p class="text-center fw-bold">${n} dam = ${n * 10} m</p>`
+                result = `${n} dam = ${n * 10} m`
                 break
             case 'dm':
-                result = `<p class="text-center fw-bold">${n} dam = ${n * 100} dm</p>`
+                result = `${n} dam = ${n * 100} dm`
                 break
             case 'cm':
-                result = `<p class="text-center fw-bold">${n} dam = ${n * 1000} cm</p>`
+                result = `${n} dam = ${n * 1000} cm`
                 break
             case 'mm':
-                result = `<p class="text-center fw-bold">${n} dam = ${n * 10000} mm</p>`
+                result = `${n} dam = ${n * 10000} mm`
                 break
         }
     } else if (from == 'm') {
         switch (to) {
             case 'km':
-                result = `<p class="text-center fw-bold">${n} m = ${n / 1000} km</p>`
+                result = `${n} m = ${n / 1000} km`
                 break
             case 'hm':
-                result = `<p class="text-center fw-bold">${n} m = ${n / 100} hm</p>`
+                result = `${n} m = ${n / 100} hm`
                 break
             case 'dam':
-                result = `<p class="text-center fw-bold">${n} m = ${n / 10} dam</p>`
+                result = `${n} m = ${n / 10} dam`
                 break
             case 'm':
-                result = `<p class="text-center fw-bold">${n} m = ${n * 1} m</p>`
+                result = `${n} m = ${n * 1} m`
                 break
             case 'dm':
-                result = `<p class="text-center fw-bold">${n} m = ${n * 10} dm</p>`
+                result = `${n} m = ${n * 10} dm`
                 break
             case 'cm':
-                result = `<p class="text-center fw-bold">${n} m = ${n * 100} cm</p>`
+                result = `${n} m = ${n * 100} cm`
                 break
             case 'mm':
-                result = `<p class="text-center fw-bold">${n} m = ${n * 1000} mm</p>`
+                result = `${n} m = ${n * 1000} mm`
                 break
         }
     } else if (from == 'dm') {
         switch (to) {
             case 'km':
-                result = `<p class="text-center fw-bold">${n} dm = ${n / 10000} km</p>`
+                result = `${n} dm = ${n / 10000} km`
                 break
             case 'hm':
-                result = `<p class="text-center fw-bold">${n} dm = ${n / 1000} hm</p>`
+                result = `${n} dm = ${n / 1000} hm`
                 break
             case 'dam':
-                result = `<p class="text-center fw-bold">${n} dm = ${n / 100} dam</p>`
+                result = `${n} dm = ${n / 100} dam`
                 break
             case 'm':
-                result = `<p class="text-center fw-bold">${n} dm = ${n / 10} m</p>`
+                result = `${n} dm = ${n / 10} m`
                 break
             case 'dm':
-                result = `<p class="text-center fw-bold">${n} dm = ${n * 1} dm</p>`
+                result = `${n} dm = ${n * 1} dm`
                 break
             case 'cm':
-                result = `<p class="text-center fw-bold">${n} dm = ${n * 10} cm</p>`
+                result = `${n} dm = ${n * 10} cm`
                 break
             case 'mm':
-                result = `<p class="text-center fw-bold">${n} dm = ${n * 100} mm</p>`
+                result = `${n} dm = ${n * 100} mm`
                 break
         }
     } else if (from == 'cm') {
         switch (to) {
             case 'km':
-                result = `<p class="text-center fw-bold">${n} cm = ${n / 100000} km</p>`
+                result = `${n} cm = ${n / 100000} km`
                 break
             case 'hm':
-                result = `<p class="text-center fw-bold">${n} cm = ${n / 10000} hm</p>`
+                result = `${n} cm = ${n / 10000} hm`
                 break
             case 'dam':
-                result = `<p class="text-center fw-bold">${n} cm = ${n / 1000} dam</p>`
+                result = `${n} cm = ${n / 1000} dam`
                 break
             case 'm':
-                result = `<p class="text-center fw-bold">${n} cm = ${n / 100} m</p>`
+                result = `${n} cm = ${n / 100} m`
                 break
             case 'dm':
-                result = `<p class="text-center fw-bold">${n} cm = ${n / 10} dm</p>`
+                result = `${n} cm = ${n / 10} dm`
                 break
             case 'cm':
-                result = `<p class="text-center fw-bold">${n} cm = ${n * 1} cm</p>`
+                result = `${n} cm = ${n * 1} cm`
                 break
             case 'mm':
-                result = `<p class="text-center fw-bold">${n} cm = ${n * 10} mm</p>`
+                result = `${n} cm = ${n * 10} mm`
                 break
         }
     } else {
         switch (to) {
             case 'km':
-                result = `<p class="text-center fw-bold">${n} mm = ${n / 1000000} km</p>`
+                result = `${n} mm = ${n / 1000000} km`
                 break
             case 'hm':
-                result = `<p class="text-center fw-bold">${n} mm = ${n / 100000} hm</p>`
+                result = `${n} mm = ${n / 100000} hm`
                 break
             case 'dam':
-                result = `<p class="text-center fw-bold">${n} mm = ${n / 10000} dam</p>`
+                result = `${n} mm = ${n / 10000} dam`
                 break
             case 'm':
-                result = `<p class="text-center fw-bold">${n} mm = ${n / 1000} m</p>`
+                result = `${n} mm = ${n / 1000} m`
                 break
             case 'dm':
-                result = `<p class="text-center fw-bold">${n} mm = ${n / 100} dm</p>`
+                result = `${n} mm = ${n / 100} dm`
                 break
             case 'cm':
-                result = `<p class="text-center fw-bold">${n} mm = ${n / 10} cm</p>`
+                result = `${n} mm = ${n / 10} cm`
                 break
             case 'mm':
-                result = `<p class="text-center fw-bold">${n} mm = ${n * 1} mm</p>`
+                result = `${n} mm = ${n * 1} mm`
                 break
         }
     }
