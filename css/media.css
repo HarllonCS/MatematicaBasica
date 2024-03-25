@@ -175,6 +175,7 @@
     #table {width: 35vw;}
     #unit {width: 28vw;}
     #temperature {width: 35vw;}
+    #triangle {width: 25vw;}
 
     #temperature .form-control {width: 9vw;}
     #temperature .temp-op {width: 25vw;}
