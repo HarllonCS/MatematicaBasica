@@ -44,7 +44,7 @@
     </header> <!-- /end Header -->
 
     <main role="main">
-        <section class="mx-auto mt-sm-3 mt-lg-5 d-none"> <!-- Cards -->
+        <section class="mx-auto mt-sm-3 mt-lg-5"> <!-- Cards -->
             <div class="row justify-content-md-between">
                 <div class="card col-lg-3 col-md-6 p-1">
                     <img src="https://picsum.photos/200/100?random=1" class="rounded">
@@ -70,9 +70,9 @@
                     <img src="https://picsum.photos/200/100?random=3" class="rounded">
 
                     <div class="card-body">
-                        <h5 class="card-title">Card 3</h5>
+                        <h5 class="card-title">Temperature Calculator</h5>
 
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="card-text">Convert temperatures using: Celsius, Fahrenheit and Kelvin</p>
                     </div>
                 </div>
 
@@ -131,7 +131,7 @@
         </section> <!-- /end Cards -->
         
         <div>
-            <div id="table" class="my-5 p-4 rounded mx-auto shadow d-none input-box"> <!-- Calculation Table -->
+            <div id="table" class="my-5 p-4 rounded mx-auto shadow input-box"> <!-- Calculation Table -->
                 <!-- Start -->
                 <input type="number" id="tableStart" class="form-control mb-4" placeholder="Start" step=".05" autofocus>
                 <!-- End -->
@@ -145,22 +145,22 @@
 
                 <div class="d-lg-flex justify-content-lg-between">
                     <div class="form-check mb-sm-3 mb-lg-0"> <!-- Addition option -->
-                        <input type="radio" id="add" name="op" class="table-op form-check-input">
+                        <input type="radio" id="add" name="tableOp" class="table-op form-check-input">
                         <label for="add" class="form-check-label fw-bold">Addition (+)</label>
                     </div> <!-- /end Addition option -->
 
                     <div class="form-check mb-sm-3 mb-lg-0"> <!-- Subtration option -->
-                        <input type="radio" id="sub" name="op" class="table-op form-check-input">
+                        <input type="radio" id="sub" name="tableOp" class="table-op form-check-input">
                         <label for="sub" class="form-check-label fw-bold">Subtraction (-)</label>
                     </div> <!-- /end Subtraction option -->
 
                     <div class="form-check mb-sm-3 mb-lg-0"> <!-- Multiplication option -->
-                        <input type="radio" id="mult" name="op" class="table-op form-check-input" checked>
+                        <input type="radio" id="mult" name="tableOp" class="table-op form-check-input" checked>
                         <label for="mult" class="form-check-label fw-bold">Multiplication (X)</label>
                     </div> <!-- /end Multiplication option -->
 
                     <div class="form-check"> <!-- Division option -->
-                        <input type="radio" id="div" name="op" class="table-op form-check-input">
+                        <input type="radio" id="div" name="tableOp" class="table-op form-check-input">
                         <label for="div" class="form-check-label fw-bold">Division (÷)</label>
                     </div> <!-- /end Division option -->
                 </div>
@@ -217,18 +217,35 @@
                 </p> <!-- /end Back link -->
             </div> <!-- /end Unit of Length Converter -->
 
-            <div id="temperature" class="my-5 p-4 rounded mx-auto shadow d-none input-box"> <!-- Temperature Converter -->
-                <div class="input-group"> <!-- Input box -->
-                    <input type="number" id="tempNumber" class="form-control" placeholder="Number" step=".05" autofocus style="width: 12vw;">
+            <div id="temperature" class="my-5 p-4 rounded mx-auto shadow input-box"> <!-- Temperature Converter -->
+                <div class="input-group mb-4"> <!-- Input box -->
+                    <input type="number" id="tempNumber" class="form-control" placeholder="Number" step=".05" autofocus>
 
                     <select class="form-select fw-bold input-group-text">
-                        <option value="f">Fahrenheit (°F)</option>
-                        <option value="c" selected>Celsius (°C)</option>
-                        <option value="k">Kelvin (K)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="celsius" selected>Celsius (°C)</option>
+                        <option value="kelvin">Kelvin (K)</option>
                     </select>
                 </div> <!-- /end Input box -->
 
-                <button class="btn btn-success rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Convert</button>
+                <p class="text fw-bold text-white mb-sm-4">Calculate to:</p>
+
+                <div class="d-sm-flex justify-content-sm-between fw-bold mx-auto temp-op">
+                    <div class="form-check"> <!-- Fahrenheit option -->
+                        <input type="radio" name="tempOp" id="fah" class="form-check-input" checked>
+                        <label for="fah" class="form-check-label">Fahrenheit</label>
+                    </div> <!-- /end Fahrenheit option -->
+                    <div class="form-check"> <!-- Celsius option -->
+                        <input type="radio" name="tempOp" id="cel" class="form-check-input">
+                        <label for="cel" class="form-check-label">Celsius</label>
+                    </div> <!-- /end Celsius options -->
+                    <div class="form-check"> <!-- Kelvin options -->
+                        <input type="radio" name="tempOp" id="kel" class="form-check-input">
+                        <label for="kel" class="form-check-label">Kelvin</label>
+                    </div> <!--  /end Kelvin options -->
+                </div>
+
+                <button class="btn btn-success rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Calculate</button>
 
                 <p class="ms-auto fw-bold back-link"> <!-- Back link -->
                     <i class="fa-solid fa-arrow-left"></i>

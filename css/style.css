@@ -25,7 +25,7 @@ header select:focus {border-color: none;}
 .card:hover {border-color: skyblue;}
 
 /* Input boxes */
-/* #table, #unit, #temperature {display: none;} */
+#table, #unit, #temperature {display: none;}
 
 .input-box {background-color: #fdd386;}
 
@@ -35,6 +35,8 @@ header select:focus {border-color: none;}
 .input-box .form-control {transition: all .3s;}
 .input-box .form-control:hover {box-shadow: 0 0 0 4px #00000031;}
 .input-box .form-control::placeholder {color: #b1b1b1;}
+/* Selects */
+.input-box .form-select {text-align: left;}
 /* Checkboxes */
 .input-box .form-check-input,
 .input-box .form-check-label {cursor: pointer}

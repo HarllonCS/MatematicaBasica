@@ -14,13 +14,18 @@
     }
 
     /* input boxes */
-    #table, #unit {width: 95vw;}
+    #table,
+    #unit,
+    #temperature {width: 95vw;}
+
+    #temperature .form-control {width: 25vw;}
 
     .input-box .form-control,
     .input-box p,
     .input-box .btn,
-    .input-box .form-check,
-    .input-box .form-select {font-size: 12pt;}
+    .input-box .form-check {font-size: 12pt;}
+    
+    .input-box .form-select {font-size: 10pt;}
 
     .input-box .form-check {margin-bottom: 4vw;}
 
@@ -43,6 +48,9 @@
     /* input boxes */
     #table {width: 80vw;}
     #unit {width: 70vw;}
+    #temperature {width: 80vw;}
+
+    #temperature .form-control {width: 22vw;}
 
     .input-box .form-control,
     .input-box p,
@@ -70,11 +78,17 @@
     /* input boxes */
     #table {width: 65vw;}
     #unit {width: 50vw;}
+    #temperature {width: 55vw;}
+
+    #temperature .form-control {width: 13vw;}
 
     .input-box .form-control,
     .input-box p,
     .input-box .btn,
     .input-box .form-check {font-size: 12pt;}
+
+    .input-box .form-check,
+    .input-box .form-select {font-size: 11pt;}
 
     .input-box .back-link {width: 7.5vw;}
 }
@@ -97,14 +111,17 @@
     /* input boxes */
     #table {width: 50vw;}
     #unit {width: 40vw;}
+    #temperature {width: 45vw;}
+
+    #temperature .form-control {width: 12vw;}
 
     .input-box .form-control,
     .input-box p,
-    .input-box .btn {font-size: 11pt;}
+    .input-box .btn {font-size: 12pt;}
 
-    .input-box .form-check {font-size: 10pt;}
+    .input-box .form-check {font-size: 11pt;}
 
-    .input-box .back-link {width: 5.3vw;}
+    .input-box .back-link {width: 5.5vw;}
 }
 
 /* For Extra Large devices (>= 1200px) sizes screens */
@@ -125,12 +142,16 @@
     /* input box */
     #table {width: 50vw;}
     #unit {width: 32vw;}
+    #temperature {width: 35vw;}
+
+    #temperature .form-control {width: 7vw;}
 
     .input-box .form-control,
     .input-box p,
     .input-box .btn {font-size: 12pt;}
 
-    .input-box .form-check {font-size: 12pt;}
+    .input-box .form-check,
+    .input-box .form-select {font-size: 11pt;}
 
     .input-box .back-link {width: 4.8vw;}
 }
@@ -153,13 +174,17 @@
     /* input box */
     #table {width: 35vw;}
     #unit {width: 28vw;}
-    #temperature {width: 28vw;}
+    #temperature {width: 35vw;}
+
+    #temperature .form-control {width: 9vw;}
+    #temperature .temp-op {width: 25vw;}
 
     .input-box .form-control,
     .input-box p,
     .input-box .btn {font-size: 14pt;}
 
-    .input-box .form-check {font-size: 11.5pt;}
+    .input-box .form-check,
+    .input-box .form-select {font-size: 11.5pt;}
 
     .input-box .back-link {width: 4.8vw;}
 }
