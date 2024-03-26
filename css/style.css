@@ -3,11 +3,16 @@ header {background-color: #64C5AA;}
 
 .navbar-brand {font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;}
 
-select {
+header select {
     cursor: pointer;
     background-color: #4ead92;
     border-color: #7c7c7c
 }
-select option {background-color: #338870;}
-select:hover {background-color: #45a58a;}
-select:focus {border-color: none;}
+
+.navbar-toggler {background-color: #4ead92;}
+header select:focus {border-color: none;}
+
+header select option {
+    background-color: whitesmoke;
+    color: black;
+}
