@@ -22,8 +22,9 @@ triangleBtn.onclick = () => {
     let sideC = line2 + line3
     // Result variable initialization
     let result = null
+
     // Clean screen
-    triangleResult.innerHTML = ''
+    triangleResult.innerHTML = '' 
     // Verify if it's a triangle
     if ((line1 < sideC) && (line2 < sideB) && (line3 < sideA)) {
         // EQUILATERAL triangle

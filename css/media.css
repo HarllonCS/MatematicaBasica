@@ -16,7 +16,8 @@
     /* input boxes */
     #table,
     #unit,
-    #temperature {width: 95vw;}
+    #temperature,
+    #triangle {width: 95vw;}
 
     #temperature .form-control {width: 25vw;}
 
@@ -49,6 +50,7 @@
     #table {width: 80vw;}
     #unit {width: 70vw;}
     #temperature {width: 80vw;}
+    #triangle {width: 75vw;}
 
     #temperature .form-control {width: 22vw;}
 
@@ -79,6 +81,7 @@
     #table {width: 65vw;}
     #unit {width: 50vw;}
     #temperature {width: 55vw;}
+    #triangle {width: 52vw;}
 
     #temperature .form-control {width: 13vw;}
 
@@ -112,6 +115,7 @@
     #table {width: 50vw;}
     #unit {width: 40vw;}
     #temperature {width: 45vw;}
+    #triangle {width: 35vw;}
 
     #temperature .form-control {width: 12vw;}
 
@@ -143,6 +147,7 @@
     #table {width: 50vw;}
     #unit {width: 32vw;}
     #temperature {width: 35vw;}
+    #triangle {width: 30vw;}
 
     #temperature .form-control {width: 7vw;}
 
