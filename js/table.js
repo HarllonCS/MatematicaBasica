@@ -1,13 +1,12 @@
 // Get elements
 const op = document.querySelectorAll('.table-op')
 const table = document.getElementById('table')
-const tableBtn = document.querySelectorAll('.btn')[0]
 // Create div to the result
 const tableResult = document.createElement('div')
 tableResult.className = 'result'
 
 // TABLE FUNCTION function
-tableBtn.onclick = function() {
+resultButton[0].onclick = function() {
     let start = Number(document.getElementByid('tableStart').value)
     let end = Number(document.getElementById('tableEnd').value)
     let steps = Number(document.getElementById('tableSteps').value)

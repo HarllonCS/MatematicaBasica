@@ -2,14 +2,12 @@
 const selectFrom = document.querySelector('#from select')
 const selectTo = document.querySelector('#to select')
 const unit = document.getElementById('unit')
-// Get button
-const unitBtn = document.querySelectorAll('.btn')[1]
 // Create a div to the result
 const unitResult = document.createElement('div')
 unitResult.className = 'result'
 
 // UNIT CONVERTER function
-unitBtn.onclick = function() {
+resultButton[1].onclick = function() {
     const num = Number(document.getElementById('unitNumber').value)
     
     unitResult.innerHTML = ''

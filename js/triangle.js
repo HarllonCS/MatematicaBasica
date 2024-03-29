@@ -3,46 +3,78 @@ const triangleResult = document.createElement('div')
 triangleResult.className = 'result'
 // Get elements
 const triangle = document.getElementById('triangle')
-const triangleBtn = document.querySelectorAll('.btn')[3]
 // Triangle lines (string)
 const triangleLine = []
-triangleLine[0] = document.getElementById('triangleLine1')
-triangleLine[1] = document.getElementById('triangleLine2')
-triangleLine[2] = document.getElementById('triangleLine3')
+triangleLine.push(document.getElementById('triangleLine1'))
+triangleLine.push(document.getElementById('triangleLine2'))
+triangleLine.push(document.getElementById('triangleLine3'))
 
 // TRIANGLE functions
-triangleBtn.onclick = () => {
-    // Lines of the triangle (integer / float)
-    let line1 = Number(triangleLine[0].value)
-    let line2 = Number(triangleLine[1].value)
-    let line3 = Number(triangleLine[2].value)
-    // Sides of the triangle
+resultButton[3].onclick = () => {
+    let l1 = Number(triangleLine[0].value)
+    let l2 = Number(triangleLine[1].value)
+    let l3 = Number(triangleLine[2].value)
+    
+    // Clean result
+    triangleResult.innerHTML = ''
+
+    if (notEmptyAll() && greaterThanZero(l1, l2, l3)) {
+        triangleResult.innerHTML += `<p class="text-center fw-bold">${getTriangleType(l1, l2, l3)}</p>`
+        triangle.append(triangleResult)
+    } else {
+        if (triangleLine[0].value.length == 0) {
+            alert(`Line 1 is empty!`)
+        } else if (triangleLine[1].value.length == 0) {
+            alert(`Line 2 is empty!`)
+        } else if (triangleLine[2].value.length == 0) {
+            alert(`Line 3 is empty!`)
+        }
+    }
+}
+
+const notEmptyAll = function() {
+    const triangleBool = []
+    triangleBool.push(triangleLine[0].value.length > 0)
+    triangleBool.push(triangleLine[1].value.length > 0)
+    triangleBool.push(triangleLine[2].value.length > 0)
+
+    return triangleBool[0] && triangleBool[1] && triangleBool[2]
+}
+
+const greaterThanZero = function(line1, line2, line3) {
+    if (line1 < 0) {
+        alert('Line 1 is less than 0')
+        return false
+    } else if (line2 < 0) {
+        alert('Line 2 is less than 0')
+        return false
+    } else if (line3 < 0) {
+        alert('Line 3 is less than 0')
+        return false
+    } else {
+        return true
+    }
+    
+}
+
+function getTriangleType(line1, line2, line3) {
     let sideA = line1 + line2
     let sideB = line1 + line3
     let sideC = line2 + line3
-    // Result variable initialization
+
     let result = null
 
-    // Clean screen
-    triangleResult.innerHTML = '' 
-    // Verify if it's a triangle
     if ((line1 < sideC) && (line2 < sideB) && (line3 < sideA)) {
-        // EQUILATERAL triangle
         if (sideA == sideB && sideB == sideC) {
-            result = 'Equilateral'
-        // SCALENE triangle
+            result = 'equilateral'
         } else if (sideA != sideB && sideB != sideC) {
-            result = 'Scalene'
-        // ISOSCELES triangle
+            result = 'scalene'
         } else {
-            result = 'Isosceles'
+            result = 'isosceles'
         }
-    // If it's not a triangle
     } else {
-        result = '<span class="text-danger">It\'s not a triangle!</span>'
+        result = "<span class=\"text-danger\">It's not a triangle!</span>"
     }
-
-    triangleResult.innerHTML += `<p class="text-center fw-bold">${result}</p>`
-
-    triangle.append(triangleResult)
+    
+    return result
 }

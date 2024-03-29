@@ -1,3 +1,4 @@
+const resultButton = document.querySelectorAll('.btn')
 // Get elements
 const card = document.querySelectorAll('.card')
 const backLink = document.querySelectorAll('.back-link')

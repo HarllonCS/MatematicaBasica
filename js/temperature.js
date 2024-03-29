@@ -8,7 +8,7 @@ const selectTemp = document.querySelector('#temperature select')
 const radioTemp = document.querySelectorAll('#temperature .form-check-input')
 
 // TEMPERATURE function
-tempBtn.onclick = function() {
+resultButton[2].onclick = function() {
     const errorMsg = 'Invalid Operation!'
     const num = Number(document.getElementById('tempNumber').value)
     // Celsius formulas
