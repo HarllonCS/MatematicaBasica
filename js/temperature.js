@@ -3,7 +3,6 @@ const tempResult = document.createElement('div')
 tempResult.className = 'result'
 // Get elements
 const temperature = document.getElementById('temperature')
-const tempBtn = document.querySelectorAll('.btn')[2]
 const selectTemp = document.querySelector('#temperature select')
 const radioTemp = document.querySelectorAll('#temperature .form-check-input')
 
