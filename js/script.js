@@ -14,7 +14,6 @@ backLink[0].onclick = () => {
     sec.style.display = 'block'
     box[0].style.display = 'none'
 }
-
 // Unit Converter functions
 card[1].onclick = () => {
     sec.style.display = 'none'
@@ -24,7 +23,6 @@ backLink[1].onclick = () => {
     sec.style.display = 'block'
     box[1].style.display = 'none'
 }
-
 // Temperature functions
 card[2].onclick = () => {
     sec.style.display = 'none'
@@ -33,4 +31,13 @@ card[2].onclick = () => {
 backLink[2].onclick = () => {
     sec.style.display = 'block'
     box[2].style.display = 'none'
+}
+// Type of trinagle functions
+card[3].onclick = () => {
+    sec.style.display = 'none'
+    box[3].style.display = 'block'
+}
+backLink[3].onclick = () => {
+    sec.style.display = 'block'
+    box[3].style.display = 'none'
 }

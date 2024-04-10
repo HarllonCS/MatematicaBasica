@@ -25,10 +25,10 @@ header select:focus {border-color: none;}
 .card:hover {border-color: skyblue;}
 
 /* Input boxes */
-/* #table,
+#table,
 #unit,
 #temperature,
-#triangle {display: none;} */
+#triangle {display: none;}
 
 .input-box {background-color: #fdd386;}
 
