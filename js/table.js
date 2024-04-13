@@ -7,7 +7,7 @@ tableResult.className = 'result'
 
 // Result function
 resultButton[0].onclick = function() {
-    let start = Number(document.getElementByid('tableStart').value)
+    let start = Number(document.getElementById('tableStart').value)
     let end = Number(document.getElementById('tableEnd').value)
     let steps = Number(document.getElementById('tableSteps').value)
 
@@ -28,19 +28,19 @@ const increasingTable = (start, end, steps) => {
     // Generate table according to the params
     if (op[0].checked) {
         for (start; start <= end; start += steps) {
-            tableRes.innerHTML += generateTable(start, 'add')
+            tableResult.innerHTML += generateTable(start, 'add')
         }   
     } else if (op[1].checked) {
         for (start; start <= end; start += steps) {
-            tableRes.innerHTML += generateTable(start, 'sub')
+            tableResult.innerHTML += generateTable(start, 'sub')
         }
     } else if (op[2].checked) {
         for (start; start <= end; start += steps) {
-            tableRes.innerHTML += generateTable(start, 'mult')
+            tableResult.innerHTML += generateTable(start, 'mult')
         }
     } else {
         for (start; start <= end; start += steps) {
-            tableRes.innerHTML += generateTable(start, 'div')
+            tableResult.innerHTML += generateTable(start, 'div')
         }
     }
 }
@@ -50,19 +50,19 @@ const decreasingTable = (start, end, steps) => {
     // Generate table according to the params
     if (op[0].checked) {
         for (start; start >= end; start -= steps) {
-            tableRes.innerHTML += generateTable(start, 'add')
+            tableResult.innerHTML += generateTable(start, 'add')
         }   
     } else if (op[1].checked) {
         for (start; start >= end; start -= steps) {
-            tableRes.innerHTML += generateTable(start, 'sub')
+            tableResult.innerHTML += generateTable(start, 'sub')
         }
     } else if (op[2].checked) {
         for (start; start >= end; start -= steps) {
-            tableRes.innerHTML += generateTable(start, 'mult')
+            tableResult.innerHTML += generateTable(start, 'mult')
         }
     } else {
         for (start; start >= end; start -= steps) {
-            tableRes.innerHTML += generateTable(start, 'div')
+            tableResult.innerHTML += generateTable(start, 'div')
         }
     }
 }
