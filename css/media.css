@@ -183,6 +183,7 @@
     #unit {width: 28vw;}
     #temperature {width: 35vw;}
     #triangle {width: 25vw;}
+    #bmi {width: 20vw}
 
     #temperature .form-control {width: 9vw;}
     #temperature .temp-op {width: 25vw;}

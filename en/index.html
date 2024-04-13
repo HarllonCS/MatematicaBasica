@@ -44,7 +44,7 @@
     </header> <!-- /end Header -->
 
     <main role="main">
-        <section class="mx-auto mt-sm-3 mt-lg-5"> <!-- Cards -->
+        <section class="mx-auto mt-sm-3 mt-lg-5 d-none"> <!-- Cards -->
             <div class="row justify-content-md-between">
                 <div class="card col-lg-3 col-md-6 p-1"> <!-- Card 1 -->
                     <img src="../resources/imgs/cards/calculation-table.jpg" class="rounded">
@@ -131,7 +131,7 @@
         </section> <!-- /end Cards -->
         
         <div>
-            <div id="table" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- Calculation Table -->
+            <div id="table" class="my-5 p-3 rounded mx-auto shadow d-none input-box"> <!-- Calculation Table -->
                 <!-- Start -->
                 <input type="number" id="tableStart" class="form-control mb-4" placeholder="Start" step=".05" autofocus>
                 <!-- End -->
@@ -174,7 +174,7 @@
                 </p> <!-- /end Back link -->
             </div> <!-- /end Calculation Table -->
 
-            <div id="unit" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- Unit of Length Converter -->
+            <div id="unit" class="my-5 p-3 rounded mx-auto shadow d-none input-box"> <!-- Unit of Length Converter -->
                 <!-- unit number -->
                 <input type="number" id="unitNumber" class="form-control" placeholder="Number" step=".05" autofocus>
 
@@ -217,7 +217,7 @@
                 </p> <!-- /end Back link -->
             </div> <!-- /end Unit of Length Converter -->
 
-            <div id="temperature" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- Temperature Calculator -->
+            <div id="temperature" class="my-5 p-3 rounded mx-auto shadow d-none input-box"> <!-- Temperature Calculator -->
                 <div class="input-group mb-4"> <!-- Input box -->
                     <input type="number" id="tempNumber" class="form-control" placeholder="Number" step=".05" autofocus>
 
@@ -253,7 +253,7 @@
                 </p> <!-- /end Back link -->
             </div> <!-- /end Temperature Calculator -->
 
-            <div id="triangle" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- Type of Triangle -->
+            <div id="triangle" class="my-5 p-3 rounded mx-auto shadow d-none input-box"> <!-- Type of Triangle -->
                 <!-- Line 1 -->
                 <input type="number" id="triangleLine1" class="form-control mb-4" placeholder="1º line" step=".05" min="0" autofocus>
                 <!-- Line 2 -->
@@ -268,6 +268,19 @@
                     Back
                 </p> <!-- /end Back link -->
             </div> <!-- /end Type of Triangle -->
+
+            <div id="bmi" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- BMI Calculator -->
+                <input type="number" id="bmiHeight" class="form-control mb-4" placeholder="Height">
+
+                <input type="number" id="bmiWeight" class="form-control" placeholder="Weight">
+
+                <button class="btn btn-success rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Caculate</button>
+
+                <p class="ms-auto fw-bold back-link"> <!-- Back link-->
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back
+                </p> <!-- /end Back link -->
+            </div> <!-- /end BMI Calculator -->
         </div>
     </main>
 
@@ -277,5 +290,6 @@
     <script src="../js/unit.js"></script>
     <script src="../js/temperature.js"></script>
     <script src="../js/triangle.js"></script>
+    <script src="../js/bmi.js"></script>
 </body>
 </html>

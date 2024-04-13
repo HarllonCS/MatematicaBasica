@@ -1,4 +1,5 @@
 const resultButton = document.querySelectorAll('.btn')
+
 // Get elements
 const card = document.querySelectorAll('.card')
 const backLink = document.querySelectorAll('.back-link')
@@ -14,6 +15,7 @@ backLink[0].onclick = () => {
     sec.style.display = 'block'
     box[0].style.display = 'none'
 }
+
 // Unit Converter functions
 card[1].onclick = () => {
     sec.style.display = 'none'
@@ -23,6 +25,7 @@ backLink[1].onclick = () => {
     sec.style.display = 'block'
     box[1].style.display = 'none'
 }
+
 // Temperature functions
 card[2].onclick = () => {
     sec.style.display = 'none'
@@ -32,6 +35,7 @@ backLink[2].onclick = () => {
     sec.style.display = 'block'
     box[2].style.display = 'none'
 }
+
 // Type of trinagle functions
 card[3].onclick = () => {
     sec.style.display = 'none'

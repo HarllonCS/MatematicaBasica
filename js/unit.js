@@ -2,15 +2,16 @@
 const selectFrom = document.querySelector('#from select')
 const selectTo = document.querySelector('#to select')
 const unit = document.getElementById('unit')
+
 // Create a div to the result
 const unitResult = document.createElement('div')
 unitResult.className = 'result'
 
-// UNIT CONVERTER function
+// Result function
 resultButton[1].onclick = function() {
-    const num = Number(document.getElementById('unitNumber').value)
-    
     unitResult.innerHTML = ''
+    
+    const num = Number(document.getElementById('unitNumber').value)
 
     unitResult.innerHTML += `<p class="text-center fw-bold">${convert(selectFrom.value, selectTo.value, num)}</p>`
 

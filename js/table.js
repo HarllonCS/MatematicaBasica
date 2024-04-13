@@ -5,7 +5,7 @@ const table = document.getElementById('table')
 const tableResult = document.createElement('div')
 tableResult.className = 'result'
 
-// TABLE FUNCTION function
+// Result function
 resultButton[0].onclick = function() {
     let start = Number(document.getElementByid('tableStart').value)
     let end = Number(document.getElementById('tableEnd').value)

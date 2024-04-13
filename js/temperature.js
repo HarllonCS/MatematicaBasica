@@ -1,24 +1,29 @@
 // Create elements
 const tempResult = document.createElement('div')
 tempResult.className = 'result'
+
 // Get elements
 const temperature = document.getElementById('temperature')
 const selectTemp = document.querySelector('#temperature select')
 const radioTemp = document.querySelectorAll('#temperature .form-check-input')
 
-// TEMPERATURE function
+// Result function
 resultButton[2].onclick = function() {
     const errorMsg = 'Invalid Operation!'
     const num = Number(document.getElementById('tempNumber').value)
+
     // Celsius formulas
     const celsiusFahrenheit = 9/5 * num + 32
     const celsiusKelvin = num + 273.15
+
     // Fahrenheit formulas
     const fahrenheitCelsius = (num - 32) * 5/9
     const fahrenheitKelvin = fahrenheitCelsius + 273.15
+
     // Kelvin formulas
     const kelvinCelsius = num - 273.15
     const kelvinFahrenheit = kelvinCelsius * 9/5 + 32
+
     // Initialize the variable to get the result
     let result = null
 
@@ -35,6 +40,7 @@ resultButton[2].onclick = function() {
         } else {
             result = `<span class="text-danger">[ERRO]: ${errorMsg}</span>`
         }
+        
     // Celsius conversion
     } else if (selectTemp.value == 'celsius') {
         result = `${num}°C = `
@@ -48,6 +54,7 @@ resultButton[2].onclick = function() {
         } else {
             result = `<span class="text-danger">[ERRO]: ${errorMsg}</span>`
         }
+
     // Kelvin conversion
     } else {
         result = `${num}K = `
@@ -62,6 +69,7 @@ resultButton[2].onclick = function() {
             result = `<span class="text-danger">[ERRO]: ${errorMsg}</span>`
         }
     }
+    
     tempResult.innerHTML = `<p class="text-center fw-bold">${result}</p>`
 
     temperature.append(tempResult)
