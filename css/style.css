@@ -22,7 +22,7 @@ header select:focus {border-color: none;}
     border: 1px solid transparent;
     transition: all .4s;
 }
-.card:hover {border-color: skyblue;}
+.card:hover {border-color: #96e0cb;}
 
 /* Input boxes */
 #table,
