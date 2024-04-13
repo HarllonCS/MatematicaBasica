@@ -28,7 +28,8 @@ header select:focus {border-color: none;}
 #table,
 #unit,
 #temperature,
-#triangle {display: none;}
+#triangle,
+#bmi {display: none;}
 
 .input-box {background-color: #fdd386;}
 

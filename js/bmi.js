@@ -11,27 +11,31 @@ const bmiWeight = document.getElementById('bmiWeight')
 
 // Result function
 resultButton[4].onclick = () => {
-    bmiResult.innerHTML = ''
+    // HEIGHT and WEIGHT values
     let height = Number(bmiHeight.value)
     let weight = Number(bmiWeight.value)
 
+    // Variables for ternary operator
     const textError = "Both WEIGHT and HEIGHT must be greater than 0."
     const fieldsBoolean = weight < 0 || height < 0
 
+    // Ternary operator
     !isEmptyBMI() && fieldsBoolean ? alert(textError) : getBMI(height, weight)
 }
 
+// Check if any field is empty
 const isEmptyBMI = () => {
+    // Boolean variables for conditions
     let heightBoo = bmiHeight.value.length == 0
     let weightBoo = bmiWeight.value.length == 0
 
     let field = null
 
+    // Return "true" if one of the fields is empty
     if (heightBoo || weightBoo) {
         if (weightBoo) {
             field = "weight"
-        }
-        if (heightBoo) {
+        } if (heightBoo) {
             field = "height"
         }
 
@@ -40,14 +44,18 @@ const isEmptyBMI = () => {
         return true
     }
 
+    // Return "false" if not
     return false
 }
 
+// Function to get the BMI
 function getBMI(height, weight) {
+    // Result variables
     let result = weight/(height**2)
     let classification = ''
     let grade = 0
 
+    // Variables receive the value according to the condition.
     if (result <= 18.5) {
         classification = 'thinness'
     } else if (result <= 24.9) {

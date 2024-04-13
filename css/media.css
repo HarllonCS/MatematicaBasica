@@ -17,7 +17,8 @@
     #table,
     #unit,
     #temperature,
-    #triangle {width: 95vw;}
+    #triangle,
+    #bmi {width: 95vw;}
 
     #temperature .form-control {width: 25vw;}
 
@@ -51,6 +52,7 @@
     #unit {width: 70vw;}
     #temperature {width: 80vw;}
     #triangle {width: 75vw;}
+    #bmi {width: 70vw}
 
     #temperature .form-control {width: 22vw;}
 
@@ -82,6 +84,7 @@
     #unit {width: 50vw;}
     #temperature {width: 55vw;}
     #triangle {width: 52vw;}
+    #bmi {width: 45vw}
 
     #temperature .form-control {width: 13vw;}
 
@@ -116,6 +119,7 @@
     #unit {width: 40vw;}
     #temperature {width: 45vw;}
     #triangle {width: 35vw;}
+    #bmi {width: 36vw}
 
     #temperature .form-control {width: 12vw;}
 
@@ -148,6 +152,7 @@
     #unit {width: 32vw;}
     #temperature {width: 35vw;}
     #triangle {width: 30vw;}
+    #bmi {width: 32vw}
 
     #temperature .form-control {width: 7vw;}
 
@@ -183,7 +188,7 @@
     #unit {width: 28vw;}
     #temperature {width: 35vw;}
     #triangle {width: 25vw;}
-    #bmi {width: 20vw}
+    #bmi {width: 28vw}
 
     #temperature .form-control {width: 9vw;}
     #temperature .temp-op {width: 25vw;}

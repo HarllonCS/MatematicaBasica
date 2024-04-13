@@ -45,3 +45,13 @@ backLink[3].onclick = () => {
     sec.style.display = 'block'
     box[3].style.display = 'none'
 }
+
+// BMI Calculator functions
+card[4].onclick = () => {
+    sec.style.display = 'none'
+    box[4].style.display = 'block'
+}
+backLink[4].onclick = () => {
+    sec.style.display = 'block'
+    box[4].style.display = 'none'
+}
