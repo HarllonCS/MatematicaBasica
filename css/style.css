@@ -10,8 +10,10 @@ header select {
     background-color: #4ead92;
     border-color: #555555
 }
-header select option {background-color: #338870;}
-header select:hover {background-color: #45a58a;}
+header select option {
+    background-color: whitesmoke;
+    color: black;
+}
 header select:focus {border-color: none;}
 
 /* Cards */
