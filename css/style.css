@@ -1,14 +1,13 @@
 body {background: #a8bb9a;}
 
 /* Header */
-header {background-color: #64C5AA;}
+header {background-color: #7a8a70;}
 
 .navbar-brand {font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;}
 
 header select {
     cursor: pointer;
-    background-color: #4ead92;
-    border-color: #555555
+    background-color: #c5cba6;
 }
 header select option {
     background-color: whitesmoke;
