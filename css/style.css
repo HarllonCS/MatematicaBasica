@@ -1,4 +1,4 @@
-body {background: #a8bb9a;}
+body {background: #edfce1;} /* #a8bb9a */
 
 /* Header */
 header {background-color: #7a8a70;}
@@ -7,13 +7,19 @@ header {background-color: #7a8a70;}
 
 header select {
     cursor: pointer;
-    background-color: #c5cba6;
+    background-color: #546649; /* #c5cba6 */
+    border: 1px solid #849778;
 }
 header select option {
     background-color: whitesmoke;
     color: black;
 }
 header select:focus {border-color: none;}
+
+/* Search bar */
+#mathSearch {border: 1px solid #c0c0c0;}
+#mathSearch::placeholder {color: #8b8b8b}
+#mathSearch:focus {box-shadow: 0 0 8px 2px #0000004b}
 
 /* Cards */
 .card {
@@ -50,9 +56,7 @@ header select:focus {border-color: none;}
     border: 1px solid #00000034;
     color: whitesmoke;
 }
-.input-box .btn:hover {
-    background-color: #b98214;
-}
+.input-box .btn:hover {background-color: #b98214;}
 /* Button to back */
 .input-box .back-link {
     cursor: pointer;

@@ -88,7 +88,7 @@ function getTriangleType(line1, line2, line3) {
 
         // Variable to receive the values according to the conditions
         result = `It's a ${type.toUpperCase()} triangle.`
-        img.src = `../resources/imgs/triangles/${type}.png`
+        img.src = `../src/imgs/triangles/${type}.png`
     } else {
         // If it's not a triangle
         result = "<span class='text-danger'>It\'s not a triangle!</span>"

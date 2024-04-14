@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
 
+    <link rel="shortcut icon" href="../src/math-icon.ico" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/f1ed2eab26.js" crossorigin="anonymous"></script>
 
     <!--[if lt IE 9]>
@@ -33,7 +35,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav"> <!-- Menu content -->
                     <!-- Select language -->
-                    <select class="p-2 rounded ms-lg-auto fw-bold text-dark">
+                    <select class="p-2 rounded ms-lg-auto fw-bold text-white">
                         <option value="en" selected>English</option>
                         <option value="pt-br">Português (PT-BR)</option>
                         <option value="es">Spanish</option>
@@ -44,10 +46,17 @@
     </header> <!-- /end Header -->
 
     <main role="main">
+        <div id="searchArea"> <!-- Search area -->
+            <div class="input-group w-25 mt-4 mx-auto"> <!-- Search field -->
+                <input list="mathList" id="mathSearch" class="form-control" placeholder="Search...">
+                <button type="button" class="btn btn-success">Search</button>
+            </div> <!-- /end Search field -->
+        </div> <!-- /end Search area -->
+
         <section class="mx-auto mt-sm-3 mt-lg-5"> <!-- Cards -->
             <div class="row justify-content-md-between">
                 <div class="card col-lg-3 col-md-6 p-1"> <!-- Card 1 -->
-                    <img src="../resources/imgs/cards/calculation-table.jpg" class="rounded">
+                    <img src="../src/imgs/cards/calculation-table.jpg" class="rounded">
 
                     <div class="card-body">
                         <h5 class="card-title">Calculation Table Generator</h5>
@@ -57,7 +66,7 @@
                 </div> <!-- /end Card 1 -->
 
                 <div class="card col-lg-3 col-md-6 p-1"> <!-- Card 2 -->
-                    <img src="../resources/imgs/cards/length.jpg" class="rounded">
+                    <img src="../src/imgs/cards/length.jpg" class="rounded">
 
                     <div class="card-body">
                         <h5 class="card-title">Unit of Length Converter</h5>
@@ -67,17 +76,17 @@
                 </div> <!-- /end Card 2 -->
 
                 <div class="card col-lg-3 col-md-6 p-1"> <!-- Card 3 -->
-                    <img src="../resources/imgs/cards/temperature.jpg" class="rounded">
+                    <img src="../src/imgs/cards/temperature.jpg" class="rounded">
 
                     <div class="card-body">
                         <h5 class="card-title">Temperature Calculator</h5>
 
-                        <p class="card-text">Convert temperatures using: Celsius, Fahrenheit and Kelvin</p>
+                        <p class="card-text">Convert temperatures using: Celsius, Fahrenheit and Kelvin.</p>
                     </div>
                 </div> <!-- /end Card 3 -->
 
                 <div class="card col-lg-3 col-md-6 p-1"> <!-- Card 4 -->
-                    <img src="../resources/imgs/cards/triangle.jpg" class="rounded">
+                    <img src="../src/imgs/cards/triangle.jpg" class="rounded">
 
                     <div class="card-body">
                         <h5 class="card-title">Triangle Classification</h5>
@@ -89,7 +98,7 @@
 
             <div class="row justify-content-md-between">
                 <div class="card col-lg-3 col-md-6 p-1"> <!-- Card 5 -->
-                    <img src="../resources/imgs/cards/bmi.jpg" class="rounded">
+                    <img src="../src/imgs/cards/bmi.jpg" class="rounded">
 
                     <div class="card-body">
                         <h5 class="card-title">BMI Calculator</h5>
@@ -112,7 +121,7 @@
                     <img src="https://picsum.photos/1?random=7" class="rounded">
 
                     <div class="card-body">
-                        <h5 class="card-tile">Card 7</h5>
+                        <h5 class="card-title">Card 7</h5>
 
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>

@@ -20,7 +20,7 @@ resultButton[0].onclick = function() {
     // Call functions according to the condition
     start <= end ? increasingTable(start, end, steps) : decreasingTable(start, end, steps)
 
-    table.append(tableResult)
+    table.appendChild(tableResult)
 }
 
 // Increasing Table

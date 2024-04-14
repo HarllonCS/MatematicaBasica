@@ -6,6 +6,25 @@ const backLink = document.querySelectorAll('.back-link')
 const box = document.querySelectorAll('.input-box')
 const sec = document.querySelector('section')
 
+// Get searh area
+const search = document.getElementById('searchArea')
+
+// Create datalist for the search bar
+const dataList = document.createElement('datalist')
+dataList.id = 'mathList'
+
+search.appendChild(dataList)
+
+// Get all card titles
+const cardTitles = document.querySelectorAll('.card-title')
+for (let i = 0; i < cardTitles.length; i++) {
+    const elm = cardTitles[i];
+    // Put all card titles in the "options" element of datalist
+    if (!elm.textContent.includes('Card')) {
+        dataList.innerHTML += `<option value="${elm.textContent}"></option>`
+    }
+}
+
 // Calculation Table Generator functions
 card[0].onclick = () => {
     sec.style.display = 'none'

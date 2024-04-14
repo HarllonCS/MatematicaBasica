@@ -12,6 +12,7 @@
         width: 90vw;
         margin: 3vw auto 5vw auto;
     }
+    .card img {height: 45vw;}
 
     /* input boxes */
     #table,
@@ -46,6 +47,7 @@
         width: 90vw;
         margin: 0 auto 5vw auto;
     }
+    .card img {height: 45vw;}
 
     /* input boxes */
     #table {width: 80vw;}
@@ -73,11 +75,11 @@
 
     /* cards */
     section {width: 90vw;}
-
     .card {
         width: 45vw;
         margin-bottom: 5vw;
     }
+    .card img {height: 25vw;}
 
     /* input boxes */
     #table {width: 65vw;}
@@ -108,11 +110,11 @@
 
     /* cards */
     section {width: 80vw;}
-
     .card {
         width: 19.5vw;
         margin-bottom: 5vw;
     }
+    .card img {height: 10vw;} /*180px*/
 
     /* input boxes */
     #table {width: 50vw;}
@@ -141,11 +143,11 @@
 
     /* cards */
     section {width: 80vw;}
-
     .card {
         width: 19.5vw;
         margin-bottom: 5vw;
     }
+    .card img {height: 10vw;} /*180px*/
 
     /* input box */
     #table {width: 50vw;}
@@ -175,12 +177,10 @@
 
     /* cards */
     section {width: 80vw;}
-
     .card {
         width: 19.5vw;
         margin-bottom: 5vw;
     }
-
     .card img {height: 10vw;} /*180px*/
 
     /* input box */

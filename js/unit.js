@@ -15,7 +15,7 @@ resultButton[1].onclick = function() {
 
     unitResult.innerHTML += `<p class="text-center fw-bold">${convert(selectFrom.value, selectTo.value, num)}</p>`
 
-    unit.append(unitResult)
+    unit.appendChild(unitResult)
 }
 
 let currentFrom = selectFrom.value

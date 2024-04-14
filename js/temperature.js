@@ -72,5 +72,5 @@ resultButton[2].onclick = function() {
     
     tempResult.innerHTML = `<p class="text-center fw-bold">${result}</p>`
 
-    temperature.append(tempResult)
+    temperature.appendChild(tempResult)
 }
