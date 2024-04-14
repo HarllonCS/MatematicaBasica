@@ -7,6 +7,10 @@
 
     header select {font-size: 11pt;}
 
+    /* Search Bar */
+    #searchArea {width: 80vw;}
+    #mathSearch {font-size: 14pt;}
+
     /* cards */
     .card {
         width: 90vw;
@@ -42,6 +46,10 @@
 
     header select {font-size: 12pt;}
 
+    /* Search Bar */
+    #searchArea {width: 80vw;}
+    #mathSearch {font-size: 14pt;}
+
     /* cards */
     .card {
         width: 90vw;
@@ -72,6 +80,10 @@
     .navbar-brand {font-size: 18pt;}
 
     header select {font-size: 12pt;}
+
+    /* Search Bar */
+    #searchArea {width: 60vw;}
+    #mathSearch {font-size: 12.5pt;}
 
     /* cards */
     section {width: 90vw;}
@@ -108,6 +120,10 @@
 
     header select {font-size: 11pt;}
 
+    /* Search Bar */
+    #searchArea {width: 35vw;}
+    #mathSearch {font-size: 12pt;}
+
     /* cards */
     section {width: 80vw;}
     .card {
@@ -140,6 +156,10 @@
     .navbar-brand {font-size: 18pt;}
 
     header select {font-size: 11pt;}
+
+    /* Search Bar */
+    #searchArea {width: 35vw;}
+    #mathSearch {font-size: 13pt;}
 
     /* cards */
     section {width: 80vw;}
@@ -174,6 +194,10 @@
     .navbar-brand {font-size: 22pt;}
 
     header select {font-size: 12pt;}
+
+    /* Search Bar */
+    #searchArea {width: 35vw;}
+    #mathSearch {font-size: 14pt;}
 
     /* cards */
     section {width: 80vw;}

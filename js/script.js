@@ -17,60 +17,23 @@ search.appendChild(dataList)
 
 // Get all card titles
 const cardTitles = document.querySelectorAll('.card-title')
-for (let i = 0; i < cardTitles.length; i++) {
-    const elm = cardTitles[i];
-    // Put all card titles in the "options" element of datalist
-    if (!elm.textContent.includes('Card')) {
-        dataList.innerHTML += `<option value="${elm.textContent}"></option>`
+// FOR LOOP for the Search Bar and Cards
+for (let i = 0; i < box.length; i++) {
+    // Search bar
+    dataList.innerHTML += `<option value="${cardTitles[i].textContent}"></option>`
+
+    // Cards
+    const cardIndex = card[i]
+    const boxIndex = box[i]
+    const linkIndex = backLink[i]
+
+    // Calculation Table Generator functions
+    cardIndex.onclick = () => {
+        sec.style.display = 'none'
+        boxIndex.style.display = 'block'
     }
-}
-
-// Calculation Table Generator functions
-card[0].onclick = () => {
-    sec.style.display = 'none'
-    box[0].style.display = 'block'
-}
-backLink[0].onclick = () => {
-    sec.style.display = 'block'
-    box[0].style.display = 'none'
-}
-
-// Unit Converter functions
-card[1].onclick = () => {
-    sec.style.display = 'none'
-    box[1].style.display = 'block'
-}
-backLink[1].onclick = () => {
-    sec.style.display = 'block'
-    box[1].style.display = 'none'
-}
-
-// Temperature functions
-card[2].onclick = () => {
-    sec.style.display = 'none'
-    box[2].style.display = 'block'
-}
-backLink[2].onclick = () => {
-    sec.style.display = 'block'
-    box[2].style.display = 'none'
-}
-
-// Type of trinagle functions
-card[3].onclick = () => {
-    sec.style.display = 'none'
-    box[3].style.display = 'block'
-}
-backLink[3].onclick = () => {
-    sec.style.display = 'block'
-    box[3].style.display = 'none'
-}
-
-// BMI Calculator functions
-card[4].onclick = () => {
-    sec.style.display = 'none'
-    box[4].style.display = 'block'
-}
-backLink[4].onclick = () => {
-    sec.style.display = 'block'
-    box[4].style.display = 'none'
+    linkIndex.onclick = () => {
+        sec.style.display = 'block'
+        boxIndex.style.display = 'none'
+    }
 }
