@@ -1,7 +1,10 @@
-body {background: #edfce1;} /* #a8bb9a */
+body {background: #ffeec7;} /* #edfce1 */
 
 /* Header */
-header {background-color: #7a8a70;}
+header {
+    background-color: #7a8a70;
+    border-bottom: 7px solid #e9b244;
+}
 
 .navbar-brand {font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;}
 
@@ -37,7 +40,7 @@ header select:focus {border-color: none;}
 #triangle,
 #bmi {display: none;}
 
-.input-box {background-color: #d6ad5b;}
+.input-box {background-color: #e2bd72;}
 
 /* Labels */
 .input-box .text {text-shadow: 0 0 6px #00000077;}
@@ -52,14 +55,14 @@ header select:focus {border-color: none;}
 .input-box .form-check-label {cursor: pointer}
 /* Result Button */
 .input-box .btn {
-    background-color: #d39416;
+    background-color: #e9a929;
     border: 1px solid #00000034;
     color: whitesmoke;
 }
-.input-box .btn:hover {background-color: #b98214;}
+.input-box .btn:hover {background-color: #c4902a;}
 /* Button to back */
 .input-box .back-link {
     cursor: pointer;
-    color: #93865a;
+    color: #21a7db;
 }
-.input-box .back-link:hover {color: #b89d47;}
+.input-box .back-link:hover {color: #1c89b4;}

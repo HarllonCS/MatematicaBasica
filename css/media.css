@@ -42,7 +42,7 @@
 /* For Small (landscape phones, less than 768px) devices */
 @media (min-width: 576px) and (max-width: 767.98px) {
     /* header */
-    .navbar-brand {font-size: 18pt;}
+    .navbar-brand {font-size: 15pt;}
 
     header select {font-size: 12pt;}
 
@@ -77,7 +77,7 @@
 /* For Medium (tablets, less than 992px) devices */
 @media (min-width: 768px) and (max-width: 991.98px) {
     /* header */
-    .navbar-brand {font-size: 18pt;}
+    .navbar-brand {font-size: 16pt;}
 
     header select {font-size: 12pt;}
 
@@ -116,7 +116,7 @@
 /* For Large (desktops, less than 1200px) devices */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     /* header */
-    .navbar-brand {font-size: 18pt;}
+    .navbar-brand {font-size: 15pt;}
 
     header select {font-size: 11pt;}
 
@@ -153,7 +153,7 @@
 /* For Extra Large devices (>= 1200px) sizes screens */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
     /* header */
-    .navbar-brand {font-size: 18pt;}
+    .navbar-brand {font-size: 16pt;}
 
     header select {font-size: 11pt;}
 
@@ -191,7 +191,7 @@
 /* For Extra Extra Large devices (>= 1400px) size screens */
 @media (min-width: 1400px) {
     /* header */
-    .navbar-brand {font-size: 22pt;}
+    .navbar-brand {font-size: 18pt;}
 
     header select {font-size: 12pt;}
 
