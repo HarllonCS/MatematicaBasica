@@ -4,6 +4,7 @@
 @media (max-width: 575.98px) {
     /* header */
     .navbar-brand {font-size: 14pt;}
+    .navbar-brand img {width: 5.5vw;}
 
     header select {font-size: 11pt;}
 
@@ -43,6 +44,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     /* header */
     .navbar-brand {font-size: 15pt;}
+    .navbar-brand img {width: 3.5vw;}
 
     header select {font-size: 12pt;}
 
@@ -78,6 +80,7 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
     /* header */
     .navbar-brand {font-size: 16pt;}
+    .navbar-brand img {width: 3vw;}
 
     header select {font-size: 12pt;}
 
@@ -117,6 +120,7 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
     /* header */
     .navbar-brand {font-size: 15pt;}
+    .navbar-brand img {width: 2.5vw;}
 
     header select {font-size: 11pt;}
 
@@ -153,7 +157,8 @@
 /* For Extra Large devices (>= 1200px) sizes screens */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
     /* header */
-    .navbar-brand {font-size: 16pt;}
+    .navbar-brand {font-size: 18pt;}
+    .navbar-brand img {width: 2.5vw;}
 
     header select {font-size: 11pt;}
 
@@ -192,6 +197,7 @@
 @media (min-width: 1400px) {
     /* header */
     .navbar-brand {font-size: 18pt;}
+    .navbar-brand img {width: 1.9vw;}
 
     header select {font-size: 12pt;}
 
