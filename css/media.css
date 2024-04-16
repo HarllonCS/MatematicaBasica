@@ -10,6 +10,7 @@
 
     /* Search Bar */
     #searchArea {width: 80vw;}
+    #searchArea i {font-size: 14pt;}
     #mathSearch {font-size: 14pt;}
 
     /* cards */
@@ -50,6 +51,7 @@
 
     /* Search Bar */
     #searchArea {width: 80vw;}
+    #searchArea i {font-size: 14pt;}
     #mathSearch {font-size: 14pt;}
 
     /* cards */
@@ -86,6 +88,7 @@
 
     /* Search Bar */
     #searchArea {width: 60vw;}
+    #searchArea i {font-size: 12.5pt;}
     #mathSearch {font-size: 12.5pt;}
 
     /* cards */
@@ -126,6 +129,7 @@
 
     /* Search Bar */
     #searchArea {width: 35vw;}
+    #searchArea i {font-size: 12pt;}
     #mathSearch {font-size: 12pt;}
 
     /* cards */
@@ -164,6 +168,7 @@
 
     /* Search Bar */
     #searchArea {width: 35vw;}
+    #searchArea i {font-size: 13pt;}
     #mathSearch {font-size: 13pt;}
 
     /* cards */
@@ -203,6 +208,7 @@
 
     /* Search Bar */
     #searchArea {width: 35vw;}
+    #searchArea i {font-size: 14pt;}
     #mathSearch {font-size: 14pt;}
 
     /* cards */
