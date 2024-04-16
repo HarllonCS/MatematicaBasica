@@ -46,7 +46,7 @@
     </header> <!-- /end Header -->
 
     <main role="main">
-        <section class="mx-auto mt-sm-3 mt-lg-5"> <!-- Cards -->
+        <section class="mx-auto mt-sm-3 mt-lg-5 d-none"> <!-- Cards -->
             <div id="searchArea" class="mt-4 mb-5 mx-auto"> <!-- Search area -->
                 <div class="input-group"> <!-- Search field -->
                     <input list="mathList" id="mathSearch" class="form-control" placeholder="Search">
@@ -142,7 +142,7 @@
         <div>
             <div id="table" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- Calculation Table -->
                 <!-- Start -->
-                <input type="number" id="tableStart" class="form-control mb-4" placeholder="Start" step=".05" autofocus>
+                <input type="number" id="tableStart" class="form-control mb-4" placeholder="Start" step=".05">
                 <!-- End -->
                 <input type="number" id="tableEnd" class="form-control mb-4" placeholder="End" step=".05">
                 <!-- Number -->
@@ -175,7 +175,7 @@
                 </div>
 
                 <!-- Result button -->
-                <button type="button" class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Generate</button>
+                <button type="button" class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold resultButton">Generate</button>
 
                 <p class="ms-auto fw-bold back-link"> <!-- Back link -->
                     <i class="fa-solid fa-arrow-left"></i>
@@ -185,7 +185,7 @@
 
             <div id="unit" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- Unit of Length Converter -->
                 <!-- unit number -->
-                <input type="number" id="unitNumber" class="form-control" placeholder="Number" step=".05" autofocus>
+                <input type="number" id="unitNumber" class="form-control" placeholder="Number" step=".05" min="0">
 
                 <div class="d-flex justify-content-between mt-4 mb-2">
                     <div id="from"> <!-- Convert from -->
@@ -218,7 +218,7 @@
                 </div>
 
                 <!-- Result button -->
-                <button type="button" class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Convert</button>
+                <button type="button" class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold resultButton">Convert</button>
 
                 <p class="ms-auto fw-bold back-link"> <!-- Back link -->
                     <i class="fa-solid fa-arrow-left"></i>
@@ -228,7 +228,7 @@
 
             <div id="temperature" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- Temperature Calculator -->
                 <div class="input-group mb-4"> <!-- Input box -->
-                    <input type="number" id="tempNumber" class="form-control" placeholder="Number" step=".05" autofocus>
+                    <input type="number" id="tempNumber" class="form-control" placeholder="Number" step=".05">
 
                     <select class="form-select fw-bold input-group-text">
                         <option value="fahrenheit">Fahrenheit (°F)</option>
@@ -255,7 +255,7 @@
                 </div>
 
                 <!-- Result button -->
-                <button class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Calculate</button>
+                <button class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold resultButton">Calculate</button>
 
                 <p class="ms-auto fw-bold back-link"> <!-- Back link -->
                     <i class="fa-solid fa-arrow-left"></i>
@@ -265,14 +265,14 @@
 
             <div id="triangle" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- Type of Triangle -->
                 <!-- Line 1 -->
-                <input type="number" id="triangleLine1" class="form-control mb-4" placeholder="1º line" step=".05" min="0" autofocus>
+                <input type="number" id="triangleLine1" class="form-control mb-4" placeholder="1º line" step=".05" min="0">
                 <!-- Line 2 -->
                 <input type="number" id="triangleLine2" class="form-control mb-4" placeholder="2º line" step=".05" min="0">
                 <!-- Line 3 -->
                 <input type="number" id="triangleLine3" class="form-control" placeholder="3º line" step=".05" min="0">
 
                 <!-- Result button -->
-                <button class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Find type</button>
+                <button class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold resultButton">Find type</button>
 
                 <p class="ms-auto fw-bold back-link"> <!-- Back link-->
                     <i class="fa-solid fa-arrow-left"></i>
@@ -282,12 +282,12 @@
 
             <div id="bmi" class="my-5 p-3 rounded mx-auto shadow input-box"> <!-- BMI Calculator -->
                 <!-- Height -->
-                <input type="number" id="bmiHeight" class="form-control mb-4" placeholder="Height">
+                <input type="number" id="bmiHeight" class="form-control mb-4" step=".05" min="0" placeholder="Height">
                 <!-- Weight -->
-                <input type="number" id="bmiWeight" class="form-control" placeholder="Weight">
+                <input type="number" id="bmiWeight" class="form-control" step=".05" min="0" placeholder="Weight">
 
                 <!-- Result button -->
-                <button class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold">Caculate</button>
+                <button class="btn rounded-pill d-block mx-auto mt-4 px-4 fw-bold resultButton">Caculate</button>
 
                 <p class="ms-auto fw-bold back-link"> <!-- Back link-->
                     <i class="fa-solid fa-arrow-left"></i>

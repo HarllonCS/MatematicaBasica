@@ -10,7 +10,7 @@ const bmiHeight = document.getElementById('bmiHeight')
 const bmiWeight = document.getElementById('bmiWeight')
 
 // Result function
-resultButton[4].onclick = () => {
+resultBtn[4].onclick = () => {
     // HEIGHT and WEIGHT values
     let height = Number(bmiHeight.value)
     let weight = Number(bmiWeight.value)

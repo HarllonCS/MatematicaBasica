@@ -1,4 +1,4 @@
-const resultButton = document.querySelectorAll('.btn')
+const resultBtn = document.querySelectorAll('.resultButton')
 
 // Get elements
 const card = document.querySelectorAll('.card')

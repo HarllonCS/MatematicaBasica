@@ -3,24 +3,38 @@ const selectFrom = document.querySelector('#from select')
 const selectTo = document.querySelector('#to select')
 const unit = document.getElementById('unit')
 
+const unitTable = document.getElementById('unitNumber')
+
 // Create a div to the result
 const unitResult = document.createElement('div')
 unitResult.className = 'result'
 
 // Result function
-resultButton[1].onclick = function() {
+resultBtn[1].onclick = () => {
+    // Clean result box
     unitResult.innerHTML = ''
     
-    const num = Number(document.getElementById('unitNumber').value)
+    // Convert number
+    const num = Number(unitTable.value)
 
-    unitResult.innerHTML += `<p class="text-center fw-bold">${convert(selectFrom.value, selectTo.value, num)}</p>`
+    // Check if the field is empty
+    if (unitTable.value.length > 0 && num > 0) {
+        unitResult.innerHTML += `<p class="text-center fw-bold">${convert(selectFrom.value, selectTo.value, num)}</p>`
+
+    // Check if the valor is negative
+    } else if (num < 0) {
+        alert('There is no negative length!')
+
+    } else {
+        alert('The field should not be empty!')
+    }
 
     unit.appendChild(unitResult)
 }
 
 let currentFrom = selectFrom.value
-
-selectFrom.onchange = function() {
+// Function to "Select From"
+selectFrom.onchange = () => {
     let previousFrom = currentFrom
     currentFrom = selectFrom.value
 
@@ -30,8 +44,8 @@ selectFrom.onchange = function() {
 }
 
 let currentTo = selectTo.value
-
-selectTo.onchange = function () {
+// Function to "Select To"
+selectTo.onchange = () => {
     let previousTo = currentTo
     currentTo = selectTo.value
 
@@ -40,7 +54,7 @@ selectTo.onchange = function () {
     }
 }
 
-const convert = (from, to, n) => {
+function convert(from, to, n) {
     let result = ''
 
     if (from == 'km') {

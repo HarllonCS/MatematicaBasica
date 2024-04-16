@@ -16,7 +16,7 @@ const img = document.createElement('img')
 img.className = 'mx-auto d-block'
 
 // Result function
-resultButton[3].onclick = function() {
+resultBtn[3].onclick = () => {
     // Clean result
     triangleResult.innerHTML = ''
     img.src = ''
@@ -35,23 +35,23 @@ resultButton[3].onclick = function() {
 }
 
 // Function to check if any field is empty
-const isEmptyTriangle = () => {
+function isEmptyTriangle () {
     // Boolean variables for triangle inputs
-    let triangleBoo1 = triangleField[0].value.length == 0
-    let triangleBoo2 = triangleField[1].value.length == 0
-    let triangleBoo3 = triangleField[2].value.length == 0
+    let triangleBoo1 = triangleField[0].value.length
+    let triangleBoo2 = triangleField[1].value.length
+    let triangleBoo3 = triangleField[2].value.length
 
     // Variable to return wich input is empty
     let line = null
 
     // return true
-    if (triangleBoo1 || triangleBoo2 || triangleBoo3) {
+    if (triangleBoo1 == 0 || triangleBoo2 == 0 || triangleBoo3 == 0) {
         // line 3
-        if (triangleBoo3) { line = 3 }
+        if (triangleBoo3 == 0) { line = 3 }
         // line 2
-        if (triangleBoo2) { line = 2 }
+        if (triangleBoo2 == 0) { line = 2 }
         // line 1
-        if (triangleBoo1) { line = 1 }
+        if (triangleBoo1 == 0) { line = 1 }
 
         alert(`Line ${line} is empty!`)
         
