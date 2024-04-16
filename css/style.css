@@ -35,7 +35,7 @@ header select:focus {border-color: none;}
 
 /* Input boxes */
 #table,
-/* #unit, */
+#unit,
 #temperature,
 #triangle,
 #bmi {display: none;}
