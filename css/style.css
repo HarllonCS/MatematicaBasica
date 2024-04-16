@@ -24,6 +24,10 @@ header select:focus {border-color: none;}
 #mathSearch::placeholder {color: #8b8b8b}
 #mathSearch:focus {box-shadow: 0 0 8px 2px #0000004b}
 
+/* Search bar button */
+#searchArea .btn {background-color: #638f49;}
+#searchArea .btn:hover {background-color: #47742d;}
+
 /* Cards */
 .card {
     cursor: pointer;
