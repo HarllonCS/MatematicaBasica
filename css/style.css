@@ -20,6 +20,7 @@ header select option {
 header select:focus {border-color: none;}
 
 .navbar-toggler {background-color: #546649;}
+.navbar-toggler i {font-size: 18pt; color: #eeeeee;}
 
 /* Search bar */
 #mathSearch {border: 1px solid #c0c0c0;}
