@@ -21,11 +21,7 @@
     .card img {height: 45vw;}
 
     /* input boxes */
-    #table,
-    #unit,
-    #temperature,
-    #triangle,
-    #bmi {width: 95vw;}
+    .input-box {width: 95vw;}
 
     #temperature .form-control {width: 25vw;}
 
