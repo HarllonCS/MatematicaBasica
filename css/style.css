@@ -1,4 +1,11 @@
-body {background: #ffeec7;} /* #edfce1 */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {background: #ffeec7;}
 
 /* Header */
 header {
@@ -10,7 +17,7 @@ header {
 
 header select {
     cursor: pointer;
-    background-color: #546649; /* #c5cba6 */
+    background-color: #546649;
     border: 1px solid #849778;
 }
 header select option {
@@ -20,12 +27,22 @@ header select option {
 header select:focus {border-color: none;}
 
 .navbar-toggler {background-color: #546649;}
-.navbar-toggler i {font-size: 18pt; color: #eeeeee;}
+.navbar-toggler i {
+    font-size: 18pt;
+    color: #eeeeee;
+}
 
 /* Search bar */
 #mathSearch {border: 1px solid #c0c0c0;}
+#mathSearch::-webkit-input-placeholder {color: #8b8b8b}
+#mathSearch::-moz-placeholder {color: #8b8b8b}
+#mathSearch:-ms-input-placeholder {color: #8b8b8b}
+#mathSearch::-ms-input-placeholder {color: #8b8b8b}
 #mathSearch::placeholder {color: #8b8b8b}
-#mathSearch:focus {box-shadow: 0 0 8px 2px #0000004b}
+#mathSearch:focus {
+    -webkit-box-shadow: 0 0 8px 2px #0000004b;
+    box-shadow: 0 0 8px 2px #0000004b
+}
 
 /* Search bar button */
 #searchArea .btn {background-color: #638f49;}
@@ -36,24 +53,33 @@ header select:focus {border-color: none;}
     cursor: pointer;
     background-color: transparent;
     border: 1px solid transparent;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
     transition: all .4s;
 }
 .card:hover {border-color: #c5cba6;}
 
 /* Input boxes */
-#table,
-#unit,
-#temperature,
-#triangle,
-#bmi {display: none;}
+.input-box {display: none;}
 
 .input-box {background-color: #e2bd72;}
 
 /* Labels */
 .input-box .text {text-shadow: 0 0 6px #00000077;}
 /* Fields */
-.input-box .form-control {transition: all .3s;}
-.input-box .form-control:hover {box-shadow: 0 0 0 4px #00000031;}
+.input-box .form-control {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.input-box .form-control:hover {
+    -webkit-box-shadow: 0 0 0 4px #00000031;
+    box-shadow: 0 0 0 4px #00000031;
+}
+.input-box .form-control::-webkit-input-placeholder {color: #b1b1b1;}
+.input-box .form-control::-moz-placeholder {color: #b1b1b1;}
+.input-box .form-control:-ms-input-placeholder {color: #b1b1b1;}
+.input-box .form-control::-ms-input-placeholder {color: #b1b1b1;}
 .input-box .form-control::placeholder {color: #b1b1b1;}
 /* Selects */
 .input-box .form-select {text-align: left;}
