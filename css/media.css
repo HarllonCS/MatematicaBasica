@@ -3,75 +3,75 @@
 /* For Extra Small (portrait phones, less than 576px) devices */
 @media (max-width: 575.98px) {
     /* header */
-    .navbar-brand {font-size: 14pt;}
-    .navbar-brand img {width: 5.5vw;}
+    .navbar-brand { font-size: 14pt; }
+    .navbar-brand img { width: 5.5vw; }
 
-    header select {font-size: 11pt;}
+    header select { font-size: 11pt; }
 
     /* Search Bar */
-    #searchArea {width: 80vw;}
-    #searchArea i {font-size: 14pt;}
-    #mathSearch {font-size: 14pt;}
+    #searchArea { width: 80vw; }
+    #searchArea i { font-size: 14pt; }
+    #mathSearch { font-size: 14pt; }
 
     /* cards */
     .card {
         width: 90vw;
         margin: 3vw auto 5vw auto;
     }
-    .card img {height: 45vw;}
+    .card img { height: 45vw; }
 
     /* input boxes */
-    .input-box {width: 95vw;}
+    .input-box { width: 95vw; }
 
-    #temperature .form-control {width: 25vw;}
+    #temperature .form-control { width: 25vw; }
 
     .input-box .form-control,
     .input-box p,
     .input-box .btn,
-    .input-box .form-check {font-size: 12pt;}
+    .input-box .form-check { font-size: 12pt; }
     
-    .input-box .form-select {font-size: 10pt;}
+    .input-box .form-select { font-size: 10pt; }
 
-    .input-box .form-check {margin-bottom: 4vw;}
+    .input-box .form-check { margin-bottom: 4vw; }
 
-    .input-box .back-link {width: 20vw;}
+    .input-box .back-link { width: 20vw; }
 }
 
 /* For Small (landscape phones, less than 768px) devices */
 @media (min-width: 576px) and (max-width: 767.98px) {
     /* header */
-    .navbar-brand {font-size: 15pt;}
-    .navbar-brand img {width: 3.5vw;}
+    .navbar-brand { font-size: 15pt; }
+    .navbar-brand img { width: 3.5vw; }
 
-    header select {font-size: 12pt;}
+    header select { font-size: 12pt; }
 
     /* Search Bar */
-    #searchArea {width: 80vw;}
-    #searchArea i {font-size: 14pt;}
-    #mathSearch {font-size: 14pt;}
+    #searchArea { width: 80vw; }
+    #searchArea i { font-size: 14pt; }
+    #mathSearch { font-size: 14pt; }
 
     /* cards */
     .card {
         width: 90vw;
         margin: 0 auto 5vw auto;
     }
-    .card img {height: 45vw;}
+    .card img { height: 45vw; }
 
     /* input boxes */
-    #table {width: 80vw;}
-    #unit {width: 70vw;}
-    #temperature {width: 80vw;}
-    #triangle {width: 75vw;}
-    #bmi {width: 70vw}
+    #table { width: 80vw; }
+    #unit { width: 70vw; }
+    #temperature { width: 80vw; }
+    #triangle { width: 75vw; }
+    #bmi { width: 70vw }
 
-    #temperature .form-control {width: 22vw;}
+    #temperature .form-control { width: 22vw; }
 
     .input-box .form-control,
     .input-box p,
     .input-box .btn,
-    .input-box .form-check {font-size: 12pt;}
+    .input-box .form-check { font-size: 12pt; }
 
-    .input-box .back-link {width: 9.8vw;}
+    .input-box .back-link { width: 9.8vw; }
 }
 
 /* For Medium (tablets, less than 992px) devices */
@@ -121,18 +121,18 @@
 /* For Large (desktops, less than 1200px) devices */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     /* header */
-    .navbar-brand {font-size: 15pt;}
-    .navbar-brand img {width: 2.5vw;}
+    .navbar-brand { font-size: 15pt; }
+    .navbar-brand img { width: 2.5vw; }
 
-    header select {font-size: 11pt;}
+    header select { font-size: 11pt; }
 
     /* Search Bar */
-    #searchArea {width: 35vw;}
-    #searchArea i {font-size: 12pt;}
-    #mathSearch {font-size: 12pt;}
+    #searchArea { width: 35vw; }
+    #searchArea i { font-size: 12pt; }
+    #mathSearch { font-size: 12pt; }
 
     /* cards */
-    section {width: 80vw;}
+    section { width: 80vw; }
     #cardsArea {
         column-gap: .6vw;
         row-gap: 2.5vw;
@@ -141,24 +141,24 @@
         width: 19.5vw;
         margin-bottom: 5vw;
     }
-    .card img {height: 10vw;} /*180px*/
+    .card img { height: 10vw; } /*180px*/
 
     /* input boxes */
-    #table {width: 50vw;}
-    #unit {width: 40vw;}
-    #temperature {width: 45vw;}
-    #triangle {width: 35vw;}
-    #bmi {width: 36vw}
+    #table { width: 50vw; }
+    #unit { width: 40vw; }
+    #temperature { width: 45vw; }
+    #triangle { width: 35vw; }
+    #bmi { width: 36vw; }
 
-    #temperature .form-control {width: 12vw;}
+    #temperature .form-control { width: 12vw; }
 
     .input-box .form-control,
     .input-box p,
-    .input-box .btn {font-size: 12pt;}
+    .input-box .btn { font-size: 12pt; }
 
-    .input-box .form-check {font-size: 11pt;}
+    .input-box .form-check { font-size: 11pt; }
 
-    .input-box .back-link {width: 5.5vw;}
+    .input-box .back-link { width: 5.5vw; }
 }
 
 /* For Extra Large devices (>= 1200px) sizes screens */
@@ -232,7 +232,7 @@
     #unit { width: 28vw; }
     #temperature { width: 35vw; }
     #triangle { width: 25vw; }
-    #bmi { width: 28vw }
+    #bmi { width: 28vw; }
 
     #temperature .form-control { width: 9vw; }
     #temperature .temp-op { width: 25vw; }
