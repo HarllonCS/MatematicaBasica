@@ -5,7 +5,18 @@
 * Browsers: last 4 version
 */
 
-body {background: #ffeec7;}
+/* Variables */
+:root {
+    --searchColor_placeholder: #afacac;
+    --searchBoxShadow_focus: 0 0 8px 2px #00000025;
+    --darkGreen: #546649;
+    --cardTransition: all .4s;
+    --inputTransition: all .3s;
+    --inputBoxShadow_hover: 0 0 0 4px #00000031;
+    --inputColor_placeholder: #b1b1b1;
+}
+
+body { background: #f8ecd3; }
 
 /* Header */
 header {
@@ -13,89 +24,90 @@ header {
     border-bottom: 7px solid #e9b244;
 }
 
-.navbar-brand {font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;}
+.navbar-brand { font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif; }
 
 header select {
     cursor: pointer;
-    background-color: #546649;
+    background-color: var(--darkGreen);
     border: 1px solid #849778;
 }
 header select option {
     background-color: whitesmoke;
     color: black;
 }
-header select:focus {border-color: none;}
+header select:focus { border-color: none; }
 
-.navbar-toggler {background-color: #546649;}
+.navbar-toggler { background-color: var(--darkGreen); }
 .navbar-toggler i {
     font-size: 18pt;
     color: #eeeeee;
 }
 
 /* Search bar */
-#mathSearch {border: 1px solid #c0c0c0;}
-#mathSearch::-webkit-input-placeholder {color: #8b8b8b}
-#mathSearch::-moz-placeholder {color: #8b8b8b}
-#mathSearch:-ms-input-placeholder {color: #8b8b8b}
-#mathSearch::-ms-input-placeholder {color: #8b8b8b}
-#mathSearch::placeholder {color: #8b8b8b}
+#mathSearch { border: 1px solid #c0c0c0; }
+#mathSearch::-webkit-input-placeholder { color: var(--searchColor_placeholder); }
+#mathSearch::-moz-placeholder { color: var(--searchColor_placeholder); }
+#mathSearch:-ms-input-placeholder { color: var(--searchColor_placeholder); }
+#mathSearch::-ms-input-placeholder { color: var(--searchColor_placeholder); }
+#mathSearch::placeholder { color: var(--searchColor_placeholder); }
 #mathSearch:focus {
-    -webkit-box-shadow: 0 0 8px 2px #0000004b;
-    box-shadow: 0 0 8px 2px #0000004b
+    -webkit-box-shadow: var(--searchBoxShadow_focus);
+    box-shadow: var(--searchBoxShadow_focus);
 }
 
 /* Search bar button */
-#searchArea .btn {background-color: #638f49;}
-#searchArea .btn:hover {background-color: #47742d;}
+#searchArea .btn { background-color: #638f49; }
+#searchArea .btn:hover { background-color: #47742d; }
 
 /* Cards */
+#cardsArea { flex-wrap: wrap; }
 .card {
     cursor: pointer;
     background-color: transparent;
     border: 1px solid transparent;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    -webkit-transition: var(--cardTransition);
+    -o-transition: var(--cardTransition);
+    transition: var(--cardTransition);
 }
-.card:hover {border-color: #c5cba6;}
+.card:hover { border-color: #c5cba6; }
 
 /* Input boxes */
-.input-box {display: none;}
+.input-box { display: none; }
 
-.input-box {background-color: #e2bd72;}
+.input-box { background-color: #e2bd72; }
 
 /* Labels */
-.input-box .text {text-shadow: 0 0 6px #00000077;}
+.input-box .text { text-shadow: 0 0 6px #00000077; }
 /* Fields */
 .input-box .form-control {
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: var(--inputTransition);
+    -o-transition: var(--inputTransition);
+    transition: var(--inputTransition);
 }
 .input-box .form-control:hover {
-    -webkit-box-shadow: 0 0 0 4px #00000031;
-    box-shadow: 0 0 0 4px #00000031;
+    -webkit-box-shadow: var(--inputBoxShadow_hover);
+    box-shadow: var(--inputBoxShadow_hover);
 }
-.input-box .form-control::-webkit-input-placeholder {color: #b1b1b1;}
-.input-box .form-control::-moz-placeholder {color: #b1b1b1;}
-.input-box .form-control:-ms-input-placeholder {color: #b1b1b1;}
-.input-box .form-control::-ms-input-placeholder {color: #b1b1b1;}
-.input-box .form-control::placeholder {color: #b1b1b1;}
+.input-box .form-control::-webkit-input-placeholder { color: var(--inputColor_placeholder); }
+.input-box .form-control::-moz-placeholder { color: var(--inputColor_placeholder); }
+.input-box .form-control:-ms-input-placeholder { color: var(--inputColor_placeholder); }
+.input-box .form-control::-ms-input-placeholder { color: var(--inputColor_placeholder); }
+.input-box .form-control::placeholder { color: var(--inputColor_placeholder); }
 /* Selects */
-.input-box .form-select {text-align: left;}
+.input-box .form-select { text-align: left; }
 /* Checkboxes */
 .input-box .form-check-input,
-.input-box .form-check-label {cursor: pointer}
+.input-box .form-check-label { cursor: pointer; }
 /* Result Button */
 .input-box .btn {
     background-color: #e9a929;
     border: 1px solid #00000034;
     color: whitesmoke;
 }
-.input-box .btn:hover {background-color: #c4902a;}
+.input-box .btn:hover { background-color: #e0a123; }
 /* Button to back */
 .input-box .back-link {
     cursor: pointer;
     color: #21a7db;
 }
-.input-box .back-link:hover {color: #1c89b4;}
+.input-box .back-link:hover { color: #1c89b4; }
