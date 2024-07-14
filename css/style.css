@@ -69,7 +69,10 @@ header select:focus { border-color: none; }
     -o-transition: var(--cardTransition);
     transition: var(--cardTransition);
 }
-.card:hover { border-color: #c5cba6; }
+
+/* .card:hover { border-color: #c5cba6; } */
+
+.card-body { padding-bottom: 0; }
 
 /* Input boxes */
 .input-box { display: none; }
